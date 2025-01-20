@@ -6,127 +6,128 @@
 
 1. **Hypervisor:**
 
-The key component that enables virtualization.
+   The key component that enables virtualization.
 
-It abstracts physical hardware and allows multiple virtual machines (VMs) to run on a single host.
+   It abstracts physical hardware and allows multiple virtual machines (VMs) to run on a single host.
 
 **Types of hypervisors:**
 
-Type 1 (Bare-metal): Runs directly on hardware (e.g., VMware ESXi, Microsoft Hyper-V).
+ Type 1 (Bare-metal): Runs directly on hardware (e.g., VMware ESXi, Microsoft Hyper-V).
 
-Type 2 (Hosted): Runs on a host operating system (e.g., Oracle VirtualBox).
+ Type 2 (Hosted): Runs on a host operating system (e.g., Oracle VirtualBox).
 
 2. **Virtual Machines (VMs):**
 
-Virtualized instances that mimic physical computers.
+   Virtualized instances that mimic physical computers.
 
-Each VM has its own OS, applications, and resources.
+   Each VM has its own OS, applications, and resources.
 
 3. **Guest OS:**
 
-The operating system running inside a VM.
+   The operating system running inside a VM.
 
 4. **Virtual Network:**
 
-Virtualization of network components like routers and switches for communication between VMs.
+   Virtualization of network components like routers and switches for communication between VMs.
 
 5. **Storage Virtualization:**
 
-Abstracting physical storage into virtual storage pools accessible by VMs.
+   Abstracting physical storage into virtual storage pools accessible by VMs.
 
 **Key Concepts of Virtualization**
 
 1. **Resource Abstraction:**
 
-Resources like CPU, memory, and storage are abstracted and allocated to VMs.
+   Resources like CPU, memory, and storage are abstracted and allocated to VMs.
 
 2. **Isolation:**
 
-VMs operate independently, ensuring that the failure or security issues of one VM do not impact others.
+   VMs operate independently, ensuring that the failure or security issues of one VM do not impact others.
 
 3. **Encapsulation:**
 
-VMs are encapsulated into files, making them portable and easy to back up or restore.
+   VMs are encapsulated into files, making them portable and easy to back up or restore.
 
 4. **Live Migration:**
 
-VMs can be moved between hosts without downtime.
+  VMs can be moved between hosts without downtime.
 
 **Benefits of Virtualization**
 
 1. **Cost Efficiency:**
 
-Reduces hardware costs by running multiple VMs on a single physical server.
+  Reduces hardware costs by running multiple VMs on a single physical server.
 
 2. **Scalability:**
 
-Easily add or remove virtual resources as needed.
+   Easily add or remove virtual resources as needed.
 
 3. **Flexibility and Agility:**
 
-Quickly deploy VMs and adapt to changing workloads.
+   Quickly deploy VMs and adapt to changing workloads.
 
 4. **High Availability:**
 
-Minimize downtime with features like failover and load balancing.
+   Minimize downtime with features like failover and load balancing.
 
 5. **Better Resource Utilization:**
 
-Optimizes hardware utilization by sharing resources among VMs.
+   Optimizes hardware utilization by sharing resources among VMs.
 
 6. **Simplified Management:**
 
-Centralized management tools streamline resource provisioning and monitoring.
+   Centralized management tools streamline resource provisioning and monitoring.
 
 **Azure Virtual Machine (VM)**
 
-Azure Virtual Machines provide IaaS (Infrastructure as a Service), allowing you to run virtualized instances of Windows or Linux in the Azure Cloud.
+  Azure Virtual Machines provide IaaS (Infrastructure as a Service), allowing you to run virtualized instances of Windows 
+  or Linux in the Azure Cloud.
 
 **Types of Azure Virtual Machines**
 
 1. **General-Purpose VMs:**
 
-Balanced CPU-to-memory ratio.
+   Balanced CPU-to-memory ratio.
 
-Suitable for testing, development, and small to medium applications.
+   Suitable for testing, development, and small to medium applications.
 
-Example: D-series, B-series.
+   Example: D-series, B-series.
 
 2. **Compute-Optimized VMs:**
 
-High CPU-to-memory ratio.
+   High CPU-to-memory ratio.
 
-Best for batch processing, web servers, and analytics.
+   Best for batch processing, web servers, and analytics.
 
-Example: F-series.
+   Example: F-series.
 
 3. **Memory-Optimized VMs:**
 
-High memory-to-CPU ratio.
+   High memory-to-CPU ratio.
 
-Ideal for large databases and in-memory analytics.
+   Ideal for large databases and in-memory analytics.
 
-Example: E-series, M-series.
+   Example: E-series, M-series.
 
 4. **Storage-Optimized VMs:**
 
-High disk throughput and IOPS.
+   High disk throughput and IOPS.
 
-Suitable for big data and NoSQL databases.
+   Suitable for big data and NoSQL databases.
 
-Example: L-series.
+   Example: L-series.
 
 5. **GPU-Optimized VMs:**
 
-High-performance GPUs for AI, ML, and rendering.
+   High-performance GPUs for AI, ML, and rendering.
 
-Example: NV-series, NC-series.
+   Example: NV-series, NC-series.
 
 6. **High-Performance VMs:**
 
-Designed for high-performance computing (HPC) workloads.
+   Designed for high-performance computing (HPC) workloads.
 
-Example: H-series.
+   Example: H-series.
 
 **How to Create an Azure Virtual Machine**
 
@@ -222,25 +223,25 @@ Follow the setup wizard.
 
 **VM Scale Sets (for Auto-Scaling)**
 
-VM Scale Sets allow you to deploy and manage a set of identical VMs for automatic scaling.
+  VM Scale Sets allow you to deploy and manage a set of identical VMs for automatic scaling.
 
 **Features:**
 
-Automatic scaling based on demand or schedules.
+  Automatic scaling based on demand or schedules.
 
-Load balancing to distribute traffic evenly.
+  Load balancing to distribute traffic evenly.
 
-Integration with Azure Monitor for performance tracking.
+  Integration with Azure Monitor for performance tracking.
 
 **How to Create VM Scale Sets:**
 
 1. **Via Azure Portal:**
 
-Search for "Virtual Machine Scale Sets" → Create.
+   Search for "Virtual Machine Scale Sets" → Create.
 
-Configure parameters like instance size, autoscaling rules, and load balancer settings.
+   Configure parameters like instance size, autoscaling rules, and load balancer settings.
 
-Deploy the scale set.
+   Deploy the scale set.
 
 2. **Via Azure CLI:**
 
