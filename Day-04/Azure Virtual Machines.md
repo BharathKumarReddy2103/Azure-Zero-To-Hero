@@ -50,13 +50,13 @@
 
 4. **Live Migration:**
 
-  VMs can be moved between hosts without downtime.
+    VMs can be moved between hosts without downtime.
 
 **Benefits of Virtualization**
 
 1. **Cost Efficiency:**
 
-  Reduces hardware costs by running multiple VMs on a single physical server.
+   Reduces hardware costs by running multiple VMs on a single physical server.
 
 2. **Scalability:**
 
