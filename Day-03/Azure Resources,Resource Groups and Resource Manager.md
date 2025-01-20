@@ -96,7 +96,7 @@ c. **Azure CLI/PowerShell:**
 
 2. **Adopt Infrastructure as Code (IaC):**
 
-  Use ARM templates, Bicep, or third-party tools like Terraform for automated deployments.
+    Use ARM templates, Bicep, or third-party tools like Terraform for automated deployments.
 
 3. **Enable Role-Based Access Control (RBAC):**
 
