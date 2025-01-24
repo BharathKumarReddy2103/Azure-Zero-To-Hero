@@ -79,11 +79,17 @@ Allow or deny traffic based on IP, port, and protocol.
 Default rules allow VNet communication and block all other traffic.
 
 **Example:** Allow inbound traffic to port 80 (HTTP):
+
    Source: Any  
+   
    Source Port: *  
+   
    Destination: Any  
+   
    Destination Port: 80  
+   
    rotocol: TCP  
+   
    Action: Allow  
   
 **5. Application Security Groups (ASGs)**
