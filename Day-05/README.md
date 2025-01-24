@@ -80,12 +80,14 @@ Default rules allow VNet communication and block all other traffic.
 
 **Example:** Allow inbound traffic to port 80 (HTTP):
 
+```bash
   Source: Any  
   Source Port: *  
   Destination: Any  
   Destination Port: 80   
   Protocol: TCP  
   Action: Allow
+```
 
 **5. Application Security Groups (ASGs)**
 
