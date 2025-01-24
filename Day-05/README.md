@@ -137,6 +137,7 @@ No public internet required.
 **Types:**
 
 **Regional Peering:** Between VNets in the same region.
+
 **Global Peering:** Between VNets in different regions.
 
 **11. VNet Gateway**
