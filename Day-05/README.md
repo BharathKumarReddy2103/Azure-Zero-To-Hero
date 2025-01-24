@@ -1,17 +1,23 @@
 **Azure Virtual Network (VNet):**
 
-Azure Virtual Network (VNet) is the foundational building block for securely networking Azure resources. It allows you to create your own private network within Azure, providing full control over IP addresses, subnets, and communication between resources within and outside of Azure.
+Azure Virtual Network (VNet) is the foundational building block for securely networking Azure resources. It allows you to 
+
+create your own private network within Azure, providing full control over IP addresses, subnets, and communication between 
+
+resources within and outside of Azure.
 
 **Key Features of Azure VNet**
 
 **Isolation and Segmentation:**
 
 Isolate resources within a private network.
+
 Use subnets for segmentation.
 
 **Secure Communication:**
 
 Control traffic flow using Network Security Groups (NSGs).
+
 Use encryption for data in transit.
 
 **Extend and Connect:**
@@ -33,15 +39,21 @@ Load balancing and redundancy ensure application availability.
 **CIDR Block:** Each subnet is assigned a range of IP addresses from the VNet.
 
 **Example:** A VNet with a CIDR block of 10.0.0.0/16 can have subnets like:
+
 10.0.1.0/24 for web servers.
+
 10.0.2.0/24 for databases.
 
 **2. CIDR (Classless Inter-Domain Routing)**
 
 Used to define IP address ranges for VNets and subnets.
+
 Example: 10.0.0.0/16 means:
+
 Network: 10.0.0.0.
+
 Total IPs: 65,536 (for /16 mask).
+
 Smaller subnets can be carved from this range using a larger CIDR value.
 
 **3. Routes and Route Tables**
@@ -53,7 +65,9 @@ Smaller subnets can be carved from this range using a larger CIDR value.
 **Custom Routes:** Used to route traffic to:
 
 Virtual Appliances.
+
 Internet.
+
 On-premises networks via VPN Gateway.
 
 **4. Network Security Groups (NSGs)**
@@ -63,14 +77,16 @@ On-premises networks via VPN Gateway.
 **Rules:**
 
 Allow or deny traffic based on IP, port, and protocol.
+
 Default rules allow VNet communication and block all other traffic.
+
 **Example:** Allow inbound traffic to port 80 (HTTP):
-  Source: Any  
-  Source Port: *  
-  Destination: Any  
-  Destination Port: 80  
-  Protocol: TCP  
-  Action: Allow  
+   Source: Any  
+   Source Port: *  
+   Destination: Any  
+   Destination Port: 80  
+   rotocol: TCP  
+   Action: Allow  
   
 **5. Application Security Groups (ASGs)**
 
@@ -79,21 +95,26 @@ Group VMs logically for simplified NSG management.
 **Example:**
 
 **WebASG:** All web servers.
+
 **DBASG:** All database servers.
+
 NSG Rule: Allow traffic from WebASG to DBASG on port 1433 (SQL).
 
 **6. Azure Application Gateway and Web Application Firewall (WAF)**
 
 **Application Gateway:**
 
-Layer 7 load balancer.
-Routes traffic based on URLs, headers, etc. (Path-based routing).
-Supports SSL termination.
+  Layer 7 load balancer.
+  
+  Routes traffic based on URLs, headers, etc. (Path-based routing).
+  
+  Supports SSL termination.
 
 **WAF:**
 
-Protects against OWASP threats like SQL injection, XSS, etc.
-Integrated with Application Gateway.
+  Protects against OWASP threats like SQL injection, XSS, etc.
+
+  Integrated with Application Gateway.
 
 **7. Azure Load Balancer**
 
@@ -108,11 +129,13 @@ Integrated with Application Gateway.
 **Features:**
 
 High availability.
+
 Health probes to monitor backend instances.
 
 **8. Azure DNS**
 
 Host and manage custom DNS domains in Azure.
+
 Enable name resolution for VMs and other resources.
 
 **9. Azure Firewall**
@@ -122,7 +145,9 @@ A cloud-native network security service.
 **Features:**
 
 **Application rules:** Control outbound traffic by FQDN.
+
 **Network rules:** Control traffic by IP and protocol.
+
 **Threat intelligence:** Block traffic from malicious IPs.
 
 **10. VNet Peering**
@@ -132,6 +157,7 @@ A cloud-native network security service.
 **Features:**
 
 Low latency.
+
 No public internet required.
 
 **Types:**
@@ -147,6 +173,7 @@ Enables communication between an Azure VNet and other networks.
 **Types:**
 
 **VPN Gateway:** For encrypted connections to on-premises networks over the internet.
+
 **ExpressRoute Gateway:** For private connections using ExpressRoute.
 
 **12. VPN Gateway**
@@ -154,9 +181,13 @@ Enables communication between an Azure VNet and other networks.
 **Definition:** Provides secure communication between Azure and on-premises networks.
 
 **Connection Types:**
+
 **Site-to-Site (S2S):** Connects on-premises to Azure.
+
 **Point-to-Site (P2S):** Individual devices connect to Azure.
 
 **Conclusion**
 
-Azure VNets offer a highly customizable and secure networking solution. By combining subnets, route tables, NSGs, load balancers, and other services, you can create a robust infrastructure for your Azure environment.
+Azure VNets offer a highly customizable and secure networking solution. By combining subnets, route tables, NSGs, load
+
+balancers, and other services, you can create a robust infrastructure for your Azure environment.
