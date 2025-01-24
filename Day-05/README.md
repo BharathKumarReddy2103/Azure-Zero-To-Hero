@@ -189,10 +189,3 @@ Enables communication between an Azure VNet and other networks.
 
 Azure VNets offer a highly customizable and secure networking solution. By combining subnets, route tables, NSGs, load
 balancers, and other services, you can create a robust infrastructure for your Azure environment.
-
-## Step 2: Install Nginx
-
-Install Nginx using the following command:
-
-```bash
-sudo apt install nginx
