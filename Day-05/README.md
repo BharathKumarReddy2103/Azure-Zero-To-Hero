@@ -1,6 +1,6 @@
 **Azure Virtual Network (VNet):**
 
-Azure Virtual Network (VNet) is the foundational building block for securely networking Azure resources. It allows you to 
+Azure Virtual Network (VNet) is the foundational building block for securely networking Azure resources. It allows you to
 
 create your own private network within Azure, providing full control over IP addresses, subnets, and communication between 
 
