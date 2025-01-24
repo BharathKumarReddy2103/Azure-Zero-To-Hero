@@ -86,8 +86,9 @@ Default rules allow VNet communication and block all other traffic.
   Destination: Any  
   Destination Port: 80   
   Protocol: TCP  
-  Action: Allow  
+  Action: Allow
 ```bash
+
 **5. Application Security Groups (ASGs)**
 
 Group VMs logically for simplified NSG management.
