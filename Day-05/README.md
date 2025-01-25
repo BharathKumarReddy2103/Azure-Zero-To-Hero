@@ -99,7 +99,7 @@ Group VMs logically for simplified NSG management.
 
 **DBASG:** All database servers.
 
-NSG Rule: Allow traffic from WebASG to DBASG on port 1433 (SQL).
+**NSG Rule:** Allow traffic from WebASG to DBASG on port 1433 (SQL).
 
 **6. Azure Application Gateway and Web Application Firewall (WAF)**
 
