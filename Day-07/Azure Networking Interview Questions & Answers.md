@@ -9,7 +9,6 @@ levels. These questions will help you prepare for Azure DevOps roles.
 1. What is Azure Virtual Network (VNet)?
 
    Azure Virtual Network (VNet) is the fundamental networking layer in Azure. It enables you to create a private network
-   
    within the Azure cloud and securely connect Azure resources to each other or to on-premises environments.
   
 2. What is the purpose of a Subnet in Azure VNet?
