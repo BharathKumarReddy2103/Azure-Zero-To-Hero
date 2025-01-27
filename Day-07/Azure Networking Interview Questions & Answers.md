@@ -63,8 +63,8 @@ Here is a comprehensive list of Azure Networking interview questions categorized
    
 7. How does Azure DNS work?
 
-  Azure DNS is a hosting service for DNS domains that provides name resolution by mapping domain names to IP addresses 
-  using Azure's global network.
+   Azure DNS is a hosting service for DNS domains that provides name resolution by mapping domain names to IP addresses 
+   using Azure's global network.
   
 8. What is a Route Table in Azure Networking?
 
