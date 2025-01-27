@@ -24,13 +24,11 @@ levels. These questions will help you prepare for Azure DevOps roles.
 4. What is the difference between Azure VNet and On-Premises Network?
 
    Azure VNet is a software-defined network in the cloud, while on-premises networks are physical and managed locally. 
-
    Azure VNets provide scalability, global reach, and integration with Azure services.
 
 5. What is Network Security Group (NSG)?
 
    NSGs are firewall-like rules applied to subnets or VMs in a VNet to allow or deny inbound/outbound traffic based on
-   
    port, protocol, or IP address.
    
 **Intermediate Level Questions**
