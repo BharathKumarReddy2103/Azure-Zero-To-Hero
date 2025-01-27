@@ -95,8 +95,8 @@ Here is a comprehensive list of Azure Networking interview questions categorized
    
 5. What is the difference between VNet Peering and VNet-to-VNet VPN?
 
-  VNet Peering connects VNets within the same or different regions over Microsoft's backbone network. VNet-to-VNet VPN uses 
-  a VPN Gateway and is slower and less cost-effective.
+   VNet Peering connects VNets within the same or different regions over Microsoft's backbone network. VNet-to-VNet VPN 
+   uses a VPN Gateway and is slower and less cost-effective.
   
 6. What is a Network Virtual Appliance (NVA)?
 
@@ -105,7 +105,7 @@ Here is a comprehensive list of Azure Networking interview questions categorized
    
 7. How do Azure Virtual Network NAT Gateways work?
 
-  NAT Gateway provides outbound internet connectivity for VMs in a VNet without needing public IP addresses.
+   NAT Gateway provides outbound internet connectivity for VMs in a VNet without needing public IP addresses.
   
 8. What are the key differences between Azure Application Gateway and Azure Front Door?
 
