@@ -82,7 +82,7 @@ Click **Next: Review + Create.**
 
 1.Review all the configuration details for your VNet.
 
-2. Click Create to deploy the Virtual Network.
+2.Click Create to deploy the Virtual Network.
 
 **Step 9: Validate and Monitor**
 
