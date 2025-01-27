@@ -1,12 +1,15 @@
 **Azure Networking Interview Questions and Answers**
 
-Here is a comprehensive list of Azure Networking interview questions categorized into basic, intermediate, and advanced levels. These questions will help you prepare for Azure DevOps roles.
+Here is a comprehensive list of Azure Networking interview questions categorized into basic, intermediate, and advanced 
+
+levels. These questions will help you prepare for Azure DevOps roles.
 
 **Basic Level Questions**
 
 1. What is Azure Virtual Network (VNet)?
 
-   Azure Virtual Network (VNet) is the fundamental networking layer in Azure. It enables you to create a private network 
+   Azure Virtual Network (VNet) is the fundamental networking layer in Azure. It enables you to create a private network
+   
    within the Azure cloud and securely connect Azure resources to each other or to on-premises environments.
   
 2. What is the purpose of a Subnet in Azure VNet?
@@ -16,17 +19,20 @@ Here is a comprehensive list of Azure Networking interview questions categorized
    
 3. What is CIDR, and how is it used in Azure Networking?
 
-   Classless Inter-Domain Routing (CIDR) is a method for allocating IP addresses. In Azure, it is used to define the address 
-   space of VNets and subnets.
+   Classless Inter-Domain Routing (CIDR) is a method for allocating IP addresses. In Azure, it is used to define the
+
+   address space of VNets and subnets.
    
 4. What is the difference between Azure VNet and On-Premises Network?
 
-   Azure VNet is a software-defined network in the cloud, while on-premises networks are physical and managed locally. Azure 
-   VNets provide scalability, global reach, and integration with Azure services.
+   Azure VNet is a software-defined network in the cloud, while on-premises networks are physical and managed locally. 
+
+   Azure VNets provide scalability, global reach, and integration with Azure services.
 
 5. What is Network Security Group (NSG)?
 
-   NSGs are firewall-like rules applied to subnets or VMs in a VNet to allow or deny inbound/outbound traffic based on 
+   NSGs are firewall-like rules applied to subnets or VMs in a VNet to allow or deny inbound/outbound traffic based on
+   
    port, protocol, or IP address.
    
 **Intermediate Level Questions**
