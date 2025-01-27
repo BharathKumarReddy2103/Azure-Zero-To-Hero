@@ -1,7 +1,6 @@
 **Azure Networking Interview Questions and Answers**
 
 Here is a comprehensive list of Azure Networking interview questions categorized into basic, intermediate, and advanced 
-
 levels. These questions will help you prepare for Azure DevOps roles.
 
 **Basic Level Questions**
