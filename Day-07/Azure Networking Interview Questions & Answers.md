@@ -43,13 +43,13 @@ Here is a comprehensive list of Azure Networking interview questions categorized
 
 3. What is an Application Gateway in Azure?
 
-  Azure Application Gateway is a Layer 7 load balancer that manages application-level traffic. It supports SSL termination, 
-  Web Application Firewall (WAF), and URL-based routing.
+   Azure Application Gateway is a Layer 7 load balancer that manages application-level traffic. It supports SSL 
+   termination, Web Application Firewall (WAF), and URL-based routing.
 
 4. What is the difference between Azure Load Balancer and Azure Traffic Manager?
 
-  Azure Load Balancer operates at Layer 4 and distributes traffic within a region, while Azure Traffic Manager operates at 
-  DNS level to route traffic across regions.
+   Azure Load Balancer operates at Layer 4 and distributes traffic within a region, while Azure Traffic Manager operates at 
+   DNS level to route traffic across regions.
   
 5. What is Azure VPN Gateway, and how is it different from Azure ExpressRoute?
 
