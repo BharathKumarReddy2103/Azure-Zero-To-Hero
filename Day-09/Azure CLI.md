@@ -163,6 +163,132 @@ az vm stop --resource-group MyResourceGroup --name MyVM
 az group delete --name MyResourceGroup --yes --no-wait
 ```
 
-**Final Thoughts**
+---
 
-Azure CLI is an essential tool for DevOps Engineers to manage Azure infrastructure efficiently. It helps automate deployments, reduce manual effort, and integrate with CI/CD pipelines.
+**Azure CLI vs Azure Portal vs Terraform - Understanding the Differences**
+
+Azure CLI, Azure Portal, and Terraform are three different ways to manage and deploy resources in Azure. Each has its strengths and is suited for different use cases.
+
+**1. Overview**
+
+Azure CLI is a command-line tool used to manage Azure resources via commands and scripts. It is best suited for automation, scripting, and quick resource management.
+
+Azure Portal is a web-based graphical interface where users can manually create, manage, and monitor Azure resources. It is ideal for beginners and one-time configurations.
+
+Terraform is an Infrastructure as Code (IaC) tool that allows you to define and manage infrastructure through code. It is best for large-scale, repeatable deployments and automation.
+
+---
+
+**2. Comparison**
+
+**Azure CLI (Command-Line Interface)**
+
+Azure CLI is a command-line tool that interacts with Azure resources via terminal commands. It supports Windows, macOS, and Linux and is widely used for automation.
+
+**Some key benefits of Azure CLI:**
+
+It is faster than using the Azure Portal for creating and managing resources.
+
+It supports scripting with Bash, PowerShell, and Python for automation.
+
+It provides JSON, Table, and TSV output formats for easy parsing.
+
+A downside of Azure CLI is that it does not track infrastructure state like Terraform, making it less suitable for managing large-scale deployments.
+
+**Example: Creating a Virtual Machine using Azure CLI**
+
+```bash
+az vm create --resource-group MyResourceGroup --name MyVM --image UbuntuLTS --admin-username azureuser --generate-ssh-keys
+```
+
+This command quickly provisions a VM without navigating through the Azure Portal.
+
+---
+
+**Azure Portal**
+
+Azure Portal is a web-based interface that allows users to manage Azure resources through a visual dashboard. It is the easiest way for beginners to get started with Azure.
+
+**Some advantages of Azure Portal:**
+
+Provides an easy-to-use graphical interface.
+
+No need to remember or write commands.
+
+Real-time monitoring and dashboards for resources.
+
+However, Azure Portal is not ideal for automation. Since configurations are done manually, it lacks repeatability and can be time-consuming for large-scale deployments.
+
+**Example: Creating a Virtual Machine using Azure Portal**
+
+Log in to Azure Portal.
+
+Navigate to Virtual Machines and click Create.
+
+Choose Subscription, Resource Group, Image, and VM Size.
+
+Configure Networking, Disks, and Security settings.
+
+Click Review + Create to deploy the VM.
+
+This method is user-friendly but slower than Azure CLI and Terraform for repetitive tasks.
+
+---
+
+**Terraform**
+
+Terraform is an Infrastructure as Code (IaC) tool that allows you to define Azure infrastructure in a declarative way. Unlike Azure CLI and Portal, Terraform maintains a state file that tracks infrastructure changes, making it easier to manage and replicate environments.
+
+**Some key benefits of Terraform:**
+
+Infrastructure as Code allows defining resources in a version-controlled format.
+
+Supports multi-cloud deployments, unlike Azure CLI and Portal.
+
+Ensures consistency and repeatability in infrastructure provisioning.
+
+Enables collaboration by storing configurations in a Git repository.
+
+**Example: Creating a Virtual Machine using Terraform**
+
+```bash
+provider "azurerm" {
+  features {}
+}
+
+resource "azurerm_resource_group" "example" {
+  name     = "MyResourceGroup"
+  location = "East US"
+}
+
+resource "azurerm_virtual_machine" "example" {
+  name                  = "MyVM"
+  resource_group_name   = azurerm_resource_group.example.name
+  location              = azurerm_resource_group.example.location
+  vm_size               = "Standard_DS1_v2"
+  admin_username        = "azureuser"
+}
+```
+After writing the configuration, deploy the infrastructure using:
+
+```bash
+terraform init
+terraform apply
+```
+Terraform ensures that the same infrastructure can be recreated whenever needed.
+
+---
+
+**3. When to Use What?**
+
+Azure CLI is best for quick commands, automation, and scripting tasks. It is ideal for DevOps engineers who need to perform frequent actions on Azure resources.
+
+Azure Portal is best for beginners and for visualizing and managing Azure resources manually. It is suitable for one-time configurations and monitoring workloads.
+
+Terraform is best for large-scale, automated, and repeatable deployments. It is essential for Infrastructure as Code (IaC) and multi-cloud environments.
+
+---
+
+**4. Conclusion**
+
+For a DevOps Engineer, Azure CLI and Terraform are the best tools for managing Azure infrastructure efficiently. Azure CLI is great for quick tasks and automation, while Terraform is essential for defining infrastructure as code and ensuring repeatability.
