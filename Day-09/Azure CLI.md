@@ -66,6 +66,9 @@ az account set --subscription "YOUR_SUBSCRIPTION_NAME"
 ```bash
 az group create --name MyResourceGroup --location eastus
 ```
+--name → Name of the resource group
+
+--location → Azure region where resources will be created
 
 **2. Create a Virtual Network (VNet)**
 
