@@ -1,7 +1,7 @@
 # Azure Storage Services
 
 ## What is Azure Storage?
-Azure Storage is Microsoft's cloud storage solution that offers durable, scalable, and secure data storage options. It supports structured and unstructured data, providing different storage types to meet various needs, such as file storage, object storage, and disk storage.
+Azure Storage is Microsoft's cloud storage solution that offers durable, scalable, and secure data storage options. It supports structured and unstructured data, providing different storage types to meet various needs, such as Blob, File Table, Queue storage.
 
 ## Key Features of Azure Storage
 - **Durability & Availability:** Data is replicated across multiple locations to ensure high availability.
