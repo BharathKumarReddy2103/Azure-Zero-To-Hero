@@ -163,5 +163,6 @@ az vm stop --resource-group MyResourceGroup --name MyVM
 az group delete --name MyResourceGroup --yes --no-wait
 ```
 
-Final Thoughts
+**Final Thoughts**
+
 Azure CLI is an essential tool for DevOps Engineers to manage Azure infrastructure efficiently. It helps automate deployments, reduce manual effort, and integrate with CI/CD pipelines.
