@@ -101,7 +101,9 @@ Storing cost and usage tracking data for infrastructure resources.
 **Use Case in DevOps:**
 
 Use Azure Table Storage to store non-relational log data from Azure Functions.
+
 Maintain a cost tracking database for different Azure resources.
+
 Store feature flags for dynamic application configuration in Kubernetes.
    
 **4. Azure Queue Storage (Message Queue Service)**
