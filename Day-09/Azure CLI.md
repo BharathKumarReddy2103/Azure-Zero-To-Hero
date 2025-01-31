@@ -92,6 +92,10 @@ az vm create \
   --generate-ssh-keys
 ```
 
+--image UbuntuLTS → Uses Ubuntu as the OS
+
+--generate-ssh-keys → Automatically generates SSH keys
+
 **4. Create an Azure Storage Account**
 
 ```bash
