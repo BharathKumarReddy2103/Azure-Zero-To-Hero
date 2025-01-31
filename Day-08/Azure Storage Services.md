@@ -64,13 +64,17 @@ Supports Azure File Sync for hybrid cloud storage.
 **A DevOps Engineer can use Azure Files for:**
 
 Storing shared configuration files that need to be accessed by multiple virtual machines (VMs).
+
 Mounting shared network drives for Kubernetes Pods in AKS.
+
 Persistent storage for legacy applications running on Azure VMs.
 
 **Use Case in DevOps:**
 
 Provide shared storage for an Nginx or Apache Web Server cluster.
+
 Store Jenkins job configurations in a shared file system.
+
 Store Ansible playbooks or Helm charts that need to be shared across teams.
    
 **3. Azure Table Storage (NoSQL Key-Value Store)**
@@ -89,7 +93,9 @@ Suitable for storing large-scale structured data like logs and IoT data.
 **A DevOps Engineer can use Azure Table Storage for:**
 
 Storing logging and monitoring data from application services.
+
 Keeping metadata for infrastructure automation.
+
 Storing cost and usage tracking data for infrastructure resources.
 
 **Use Case in DevOps:**
@@ -114,13 +120,17 @@ Helps in decoupling application components.
 **A DevOps Engineer can use Azure Queue Storage for:**
 
 Implementing event-driven automation in CI/CD pipelines.
+
 Queueing messages between microservices in Azure Kubernetes Service (AKS).
+
 Managing asynchronous task execution in a distributed environment.
 
 **Use Case in DevOps:**
 
 Use Azure Queue Storage to queue logs before sending them to Azure Monitor.
+
 Queue failed CI/CD jobs for retry without manual intervention.
+
 Decouple components of a serverless application in Azure Functions.
 
 **Azure Storage Access Tiers**
