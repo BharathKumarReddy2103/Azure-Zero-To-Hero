@@ -12,6 +12,8 @@ Azure Storage is Microsoft's cloud storage solution that offers durable, scalabl
 - **Data Redundancy Options:** LRS, ZRS, GRS, and RA-GRS.
 - **Cost-Effective:** Pay-as-you-go pricing with different storage tiers (Hot, Cool, Archive).
 
+---
+
 ## Types of Azure Storage Services
 
 Azure provides four primary storage types:
@@ -137,6 +139,8 @@ Queue failed CI/CD jobs for retry without manual intervention.
 
 Decouple components of a serverless application in Azure Functions.
 
+---
+
 **Azure Storage Access Tiers**
 
 **Hot Tier:** Frequently accessed data.
@@ -144,6 +148,8 @@ Decouple components of a serverless application in Azure Functions.
 **Cool Tier:** Infrequently accessed data but still needs quick access.
 
 **Archive Tier:** Rarely accessed data, stored for long-term retention.
+
+---
 
 **Best Practices for Azure Storage**
 
