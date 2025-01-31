@@ -12,7 +12,7 @@ Azure Storage is Microsoft's cloud storage solution that offers durable, scalabl
 
 ## Types of Azure Storage Services
 
-Azure provides five primary storage types:
+Azure provides four primary storage types:
 
 ### 1. Azure Blob Storage (Object Storage)
 - Used for storing unstructured data such as images, videos, and backups.
