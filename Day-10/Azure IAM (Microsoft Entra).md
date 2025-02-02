@@ -8,7 +8,7 @@ Microsoft Entra provides identity security, access control, and governance to pr
 
 ---
 
-**Key Features of Microsoft Entra (Azure IAM Service)**
+**Key Features of Microsoft Entra**
 
 **1. Identity and Access Management (IAM)**
 
