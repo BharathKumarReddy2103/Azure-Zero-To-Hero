@@ -85,6 +85,9 @@ az ad user create \
 az ad group create \
   --display-name "Developers" \
   --mail-nickname "developers"
+ ```
+
+ ```bash
 az ad group member add \
   --group "Developers" \
   --member-id "<User_Object_ID>"
