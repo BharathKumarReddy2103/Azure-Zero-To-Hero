@@ -100,24 +100,33 @@ Provide an organization name and Azure region.
 
     6.Click Create.
 
+---
+
 **Setting Up CI/CD Pipelines in Azure DevOps**
 
 **Azure DevOps CI/CD Pipeline for a Microservice Application**
 
 This guide will help you set up a CI/CD pipeline in Azure DevOps to build, containerize, and deploy a microservice application to Amazon EKS (Elastic Kubernetes Service) using Argo CD.
 
+---
+
 **Architecture Overview**
 
 **1.CI Pipeline (Azure Pipelines)**
 
-Build Stage: Compiles the application code.
-Containerization Stage: Creates a Docker image and pushes it to Amazon Elastic Container Registry (ECR).
+    Build Stage: Compiles the application code.
+    
+    Containerization Stage: Creates a Docker image and pushes it to Amazon Elastic Container Registry (ECR).
 
 **2.CD Pipeline (Argo CD)**
 
-Deploy Stage: Uses Argo CD to sync manifests with EKS.
-Helm-based Deployment: Uses Helm charts to manage Kubernetes objects.
-Monitoring: Uses Prometheus and Grafana for observability.
+    Deploy Stage: Uses Argo CD to sync manifests with EKS.
+    
+    Helm-based Deployment: Uses Helm charts to manage Kubernetes objects.
+    
+    Monitoring: Uses Prometheus and Grafana for observability.
+
+---
 
 **Prerequisites**
 
