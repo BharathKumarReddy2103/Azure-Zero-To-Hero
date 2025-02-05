@@ -146,9 +146,9 @@ Helm Installed
 
 **Step 1: Create Azure DevOps Repository**
 
-Create a new repository in Azure DevOps (my-microservice-app).
+1.Create a new repository in Azure DevOps (my-microservice-app).
 
-Clone the repository and set up the project structure:
+2.Clone the repository and set up the project structure:
 
 ```bash
 git clone https://dev.azure.com/your-org/my-microservice-app.git
