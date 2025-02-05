@@ -63,27 +63,40 @@ Azure DevOps has better enterprise support, while GitLab CI/CD is popular for op
 **1. Sign in to Azure DevOps**
 
 Go to Azure DevOps Portal.
+
 Log in with your Microsoft Account or Azure AD credentials.
 
 **2. Create a New Azure DevOps Organization**
 
 Click New Organization if you don’t have one.
+
 Provide an organization name and Azure region.
 
 **3. Create an Azure DevOps Project**
 
 Click New Project.
+
 Enter the Project Name (e.g., MyAzureDevOpsProject).
+
 Choose Visibility:
+
 Private (Restricted access)
 Public (Accessible to anyone)
+
 Select Version Control:
-Git (Recommended)
-Team Foundation Version Control (TFVC)
+
+  Git (Recommended)
+  
+  Team Foundation Version Control (TFVC)
+  
 Select Work Item Process:
-Agile
-Scrum
-Basic
+
+  Agile
+  
+  Scrum
+  
+  Basic
+
 Click Create.
 
 **Setting Up CI/CD Pipelines in Azure DevOps**
