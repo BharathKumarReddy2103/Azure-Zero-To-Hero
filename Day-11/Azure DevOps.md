@@ -172,7 +172,7 @@ CMD ["python", "app.py"]
 
 **Step 3: Create a Helm Chart for Kubernetes Deployment**
 
-Helm Chart Directory Structure
+**Helm Chart Directory Structure**
 
 ```bash
 helm/
