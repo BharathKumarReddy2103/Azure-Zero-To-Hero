@@ -155,6 +155,9 @@ git clone https://dev.azure.com/your-org/my-microservice-app.git
 cd my-microservice-app
 mkdir -p manifests helm docker src
 ```
+
+--
+
 **Step 2: Create a Dockerfile for the Microservice**
 
 Save the following as docker/Dockerfile:
@@ -169,6 +172,8 @@ RUN pip install -r requirements.txt
 
 CMD ["python", "app.py"]
 ```
+
+--
 
 **Step 3: Create a Helm Chart for Kubernetes Deployment**
 
@@ -228,6 +233,8 @@ spec:
   type: LoadBalancer
 ```
 
+--
+
 **Step 4: Create an Azure DevOps CI/CD Pipeline (YAML)**
 
 **Pipeline File (azure-pipelines.yml)**
@@ -286,6 +293,8 @@ stages:
             displayName: "Deploy Using Helm"
 ```
 
+--
+
 **Step 5: Install Argo CD on EKS**
 
 **Install Argo CD on EKS**
@@ -308,6 +317,8 @@ Get the admin password:
 ```bash
 kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
 ```
+
+--
 
 **Step 6: Configure Argo CD for Automated Deployment**
 
@@ -340,6 +351,8 @@ Apply the Argo CD Application Config
 kubectl apply -f manifests/argocd-application.yaml
 ```
 
+--
+
 **Step 7: Verify the Deployment**
 
 Check if the pods are running
@@ -359,6 +372,8 @@ Login to Argo CD UI
 
 Ensure the my-microservice application is Healthy and Synced.
 
+--
+
 **Step 8: Automate Rollbacks (Optional)**
 
 If a deployment fails, you can rollback using:
@@ -366,6 +381,8 @@ If a deployment fails, you can rollback using:
 ```bash
 argocd app rollback my-microservice 1
 ```
+
+--
 
 This end-to-end Azure DevOps CI/CD pipeline allows you to automate the build, containerization, and deployment of a microservice application to Amazon EKS using Argo CD.
 
@@ -382,11 +399,17 @@ By using Azure Pipelines, Docker, Helm, and Argo CD, we ensure:
 **Best Practices for Using Azure DevOps**
 
 Use YAML-based Pipelines for version-controlled CI/CD automation.
+
 Enable Multi-Stage Pipelines for dev, test, staging, and production environments.
+
 Use Service Connections to integrate Azure DevOps with Kubernetes (AKS), AWS, or GCP.
+
 Implement Branching Strategies like GitFlow or Trunk-based development in Azure Repos.
+
 Monitor Pipelines & Logs using Azure Monitor and Application Insights.
+
 Use Azure Artifacts to manage dependencies and ensure secure package distribution.
+
 Enable Security Policies like Role-Based Access Control (RBAC) and Azure DevOps Audit Logs.
 
 **Conclusion**
