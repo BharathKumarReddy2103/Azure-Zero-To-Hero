@@ -74,30 +74,31 @@ Provide an organization name and Azure region.
 
 **3. Create an Azure DevOps Project**
 
-Click New Project.
+     1.Click New Project.
 
-Enter the Project Name (e.g., MyAzureDevOpsProject).
+     2.Enter the Project Name (e.g., MyAzureDevOpsProject).
 
-Choose Visibility:
+    3.Choose Visibility:
 
-Private (Restricted access)
-Public (Accessible to anyone)
+      Private (Restricted access)
+      
+      Public (Accessible to anyone)
 
-Select Version Control:
+    4.Select Version Control:
 
-  Git (Recommended)
+      Git (Recommended)
   
-  Team Foundation Version Control (TFVC)
+      Team Foundation Version Control (TFVC)
   
-Select Work Item Process:
+    5.Select Work Item Process:
 
-  Agile
+     Agile
   
-  Scrum
+     Scrum
   
-  Basic
+     Basic
 
-Click Create.
+   6.Click Create.
 
 **Setting Up CI/CD Pipelines in Azure DevOps**
 
