@@ -370,9 +370,14 @@ argocd app rollback my-microservice 1
 This end-to-end Azure DevOps CI/CD pipeline allows you to automate the build, containerization, and deployment of a microservice application to Amazon EKS using Argo CD.
 
 By using Azure Pipelines, Docker, Helm, and Argo CD, we ensure:
+
 ✅ Seamless CI/CD Automation
+
 ✅ Scalable Kubernetes Deployments
+
 ✅ Automatic Rollbacks & Syncs
+
+---
 
 **Best Practices for Using Azure DevOps**
 
