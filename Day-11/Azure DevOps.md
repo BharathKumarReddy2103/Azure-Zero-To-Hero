@@ -114,17 +114,17 @@ This guide will help you set up a CI/CD pipeline in Azure DevOps to build, conta
 
 **1.CI Pipeline (Azure Pipelines)**
 
-    Build Stage: Compiles the application code.
+Build Stage: Compiles the application code.
     
-    Containerization Stage: Creates a Docker image and pushes it to Amazon Elastic Container Registry (ECR).
+Containerization Stage: Creates a Docker image and pushes it to Amazon Elastic Container Registry (ECR).
 
 **2.CD Pipeline (Argo CD)**
 
-    Deploy Stage: Uses Argo CD to sync manifests with EKS.
+Deploy Stage: Uses Argo CD to sync manifests with EKS.
     
-    Helm-based Deployment: Uses Helm charts to manage Kubernetes objects.
+Helm-based Deployment: Uses Helm charts to manage Kubernetes objects.
     
-    Monitoring: Uses Prometheus and Grafana for observability.
+Monitoring: Uses Prometheus and Grafana for observability.
 
 ---
 
