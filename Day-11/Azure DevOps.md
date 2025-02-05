@@ -131,10 +131,15 @@ Monitoring: Uses Prometheus and Grafana for observability.
 **Prerequisites**
 
 Azure DevOps Project
+
 Amazon EKS Cluster
+
 Argo CD Installed on EKS
+
 Amazon ECR (Elastic Container Registry)
+
 Azure DevOps Service Connection for AWS
+
 Helm Installed
 
 **Step 1: Create Azure DevOps Repository**
