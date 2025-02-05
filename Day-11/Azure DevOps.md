@@ -92,11 +92,11 @@ Provide an organization name and Azure region.
   
     5.Select Work Item Process:
 
-     Agile
+      Agile
   
-     Scrum
+      Scrum
   
-     Basic
+      Basic
 
    6.Click Create.
 
