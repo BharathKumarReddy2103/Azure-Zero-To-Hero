@@ -1,4 +1,4 @@
-**Azure DevOps Service**
+**Azure DevOps**
 
 **What is Azure DevOps?**
 
