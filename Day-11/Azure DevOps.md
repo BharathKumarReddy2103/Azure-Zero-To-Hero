@@ -356,6 +356,7 @@ kubectl get svc my-microservice
 **Monitor Argo CD UI**
 
 Login to Argo CD UI
+
 Ensure the my-microservice application is Healthy and Synced.
 
 **Step 8: Automate Rollbacks (Optional)**
