@@ -34,6 +34,8 @@ Azure Artifacts allows teams to store, manage, and share dependencies like NuGet
 
 Azure DevOps integrates seamlessly with GitHub, Jenkins, Terraform, Kubernetes (AKS), Ansible, and other DevOps tools to streamline DevOps workflows.
 
+---
+
 **Azure DevOps vs Other CI/CD Tools (Jenkins, GitHub Actions, GitLab CI/CD)**
 
 **1. Azure DevOps vs Jenkins**
