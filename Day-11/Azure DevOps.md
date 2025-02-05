@@ -6,6 +6,8 @@ Azure DevOps is a cloud-based DevOps service provided by Microsoft that offers a
 
 Azure DevOps is used by development and operations teams to automate workflows, track code changes, and manage deployments to Azure, AWS, GCP, or on-premises environments.
 
+---
+
 **Key Features of Azure DevOps**
 
 **1. Azure Repos (Version Control - Git & TFVC)**
