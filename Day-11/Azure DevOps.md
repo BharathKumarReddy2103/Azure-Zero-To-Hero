@@ -74,31 +74,31 @@ Provide an organization name and Azure region.
 
 **3. Create an Azure DevOps Project**
 
-     1.Click New Project.
+1.Click New Project.
 
-     2.Enter the Project Name (e.g., MyAzureDevOpsProject).
+2.Enter the Project Name (e.g., MyAzureDevOpsProject).
 
-    3.Choose Visibility:
+3.Choose Visibility:
 
-      Private (Restricted access)
+Private (Restricted access)
       
-      Public (Accessible to anyone)
+Public (Accessible to anyone)
 
-    4.Select Version Control:
+4.Select Version Control:
 
-      Git (Recommended)
+Git (Recommended)
   
-      Team Foundation Version Control (TFVC)
+Team Foundation Version Control (TFVC)
   
-    5.Select Work Item Process:
+5.Select Work Item Process:
 
-      Agile
+Agile
   
-      Scrum
+Scrum
   
-      Basic
+Basic
 
-    6.Click Create.
+6.Click Create.
 
 ---
 
