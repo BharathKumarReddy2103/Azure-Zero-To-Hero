@@ -98,7 +98,7 @@ Provide an organization name and Azure region.
   
       Basic
 
-   6.Click Create.
+    6.Click Create.
 
 **Setting Up CI/CD Pipelines in Azure DevOps**
 
