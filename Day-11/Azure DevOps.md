@@ -56,6 +56,8 @@ Azure DevOps provides a full DevOps lifecycle suite, while GitLab CI/CD is focus
 Azure DevOps Pipelines are more scalable, whereas GitLab CI/CD is more Git-native.
 Azure DevOps has better enterprise support, while GitLab CI/CD is popular for open-source projects.
 
+---
+
 **How to Create an Azure DevOps Project?**
 
 **1. Sign in to Azure DevOps**
