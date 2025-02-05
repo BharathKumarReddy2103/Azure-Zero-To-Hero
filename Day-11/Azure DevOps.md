@@ -156,7 +156,7 @@ cd my-microservice-app
 mkdir -p manifests helm docker src
 ```
 
---
+---
 
 **Step 2: Create a Dockerfile for the Microservice**
 
@@ -173,7 +173,7 @@ RUN pip install -r requirements.txt
 CMD ["python", "app.py"]
 ```
 
---
+---
 
 **Step 3: Create a Helm Chart for Kubernetes Deployment**
 
@@ -233,7 +233,7 @@ spec:
   type: LoadBalancer
 ```
 
---
+---
 
 **Step 4: Create an Azure DevOps CI/CD Pipeline (YAML)**
 
@@ -293,7 +293,7 @@ stages:
             displayName: "Deploy Using Helm"
 ```
 
---
+---
 
 **Step 5: Install Argo CD on EKS**
 
@@ -318,7 +318,7 @@ Get the admin password:
 kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
 ```
 
---
+---
 
 **Step 6: Configure Argo CD for Automated Deployment**
 
@@ -351,7 +351,7 @@ Apply the Argo CD Application Config
 kubectl apply -f manifests/argocd-application.yaml
 ```
 
---
+---
 
 **Step 7: Verify the Deployment**
 
@@ -372,7 +372,7 @@ Login to Argo CD UI
 
 Ensure the my-microservice application is Healthy and Synced.
 
---
+---
 
 **Step 8: Automate Rollbacks (Optional)**
 
@@ -382,7 +382,7 @@ If a deployment fails, you can rollback using:
 argocd app rollback my-microservice 1
 ```
 
---
+---
 
 This end-to-end Azure DevOps CI/CD pipeline allows you to automate the build, containerization, and deployment of a microservice application to Amazon EKS using Argo CD.
 
@@ -411,6 +411,8 @@ Monitor Pipelines & Logs using Azure Monitor and Application Insights.
 Use Azure Artifacts to manage dependencies and ensure secure package distribution.
 
 Enable Security Policies like Role-Based Access Control (RBAC) and Azure DevOps Audit Logs.
+
+---
 
 **Conclusion**
 
