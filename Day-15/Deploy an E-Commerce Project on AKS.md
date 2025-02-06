@@ -56,7 +56,7 @@ The backend and frontend are deployed as microservices in Kubernetes, communicat
 
 ---
 
-3. **Deploying a Three-Tier E-Commerce Application on AKS**
+**3. Deploying a Three-Tier E-Commerce Application on AKS**
 
 **Step 1: Create Dockerfiles for Each Service**
 
