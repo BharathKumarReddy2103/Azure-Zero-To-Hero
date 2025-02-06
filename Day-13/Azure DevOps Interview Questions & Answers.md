@@ -1,6 +1,6 @@
 **Azure DevOps Interview Questions & Answers (Beginner & Advanced Level)**
 
-This guide includes Azure DevOps interview questions and answers for beginners, advanced professionals, and scenario-based questions that are commonly asked in MNCs Companies.
+This guide includes Azure DevOps interview questions and answers for beginners, advanced professionals and scenario-based questions that are commonly asked in MNCs Companies.
 
 ---
 
