@@ -100,7 +100,7 @@ ENV POSTGRES_USER=admin
 ENV POSTGRES_PASSWORD=admin
 EXPOSE 5432
 CMD ["postgres"]
-```bash
+```
 
 ---
 
