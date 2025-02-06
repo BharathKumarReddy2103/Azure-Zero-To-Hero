@@ -24,7 +24,7 @@ A three-tier architecture is a software design pattern that divides an applicati
 
 **Three Tiers in the Architecture:**
 
-1. **Presentation Layer (Frontend - UI/UX)**
+**1. Presentation Layer (Frontend - UI/UX)**
 
 Handles user interactions.
 
@@ -32,7 +32,7 @@ Built using React, Angular, Vue.js, or HTML/CSS/JavaScript.
 
 Connects to the backend via REST APIs or GraphQL.
 
-2. **Application Layer (Backend - Business Logic)**
+**2. Application Layer (Backend - Business Logic)**
 
 Contains the core business logic.
 
@@ -40,7 +40,7 @@ Built using Node.js, Python (Django/Flask), Java (Spring Boot), .NET, or Go.
 
 Communicates with both the frontend and the database.
 
-3. **Database Layer (Data Storage)**
+**3. Database Layer (Data Storage)**
 
 Stores application data.
 
