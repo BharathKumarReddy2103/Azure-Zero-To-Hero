@@ -170,34 +170,35 @@ az monitor metrics alert create --name HighCPUAlert --resource-group MyResourceG
 
 **1. E-Commerce Website Monitoring**
 
-Use Application Insights to track response times and failures.
+   - Use Application Insights to track response times and failures.
 
-Use Log Analytics to debug checkout failures.
+   - Use Log Analytics to debug checkout failures.
 
-Set up Alerts to notify the DevOps team about performance issues.
+   - Set up Alerts to notify the DevOps team about performance issues.
 
 **2. AKS (Kubernetes) Microservices Monitoring**
-Use Azure Monitor for Containers to track pod health and resource utilization.
 
-Integrate Prometheus and Grafana for advanced dashboards.
+  - Use Azure Monitor for Containers to track pod health and resource utilization.
 
-Use Azure Sentinel to detect security threats in containerized workloads.
+  - Integrate Prometheus and Grafana for advanced dashboards.
+
+  - Use Azure Sentinel to detect security threats in containerized workloads.
 
 **3. Security & Compliance Monitoring**
 
-Use Azure Sentinel for intrusion detection and security analytics.
+   - Use Azure Sentinel for intrusion detection and security analytics.
 
-Monitor Azure Firewall and Network Security Groups (NSGs) for suspicious traffic.
+   - Monitor Azure Firewall and Network Security Groups (NSGs) for suspicious traffic.
 
-Use Log Analytics to detect failed login attempts and brute force attacks.
+   - Use Log Analytics to detect failed login attempts and brute force attacks.
 
 **4. Cost Optimization Monitoring**
 
-Use Azure Cost Management to track and optimize cloud spending.
+   - Use Azure Cost Management to track and optimize cloud spending.
 
-Identify unused VMs, disks, and storage accounts.
+   - Identify unused VMs, disks, and storage accounts.
 
-Get recommendations on rightsizing Azure VMs for cost efficiency.
+   - Get recommendations on rightsizing Azure VMs for cost efficiency.
 
 ---
 
