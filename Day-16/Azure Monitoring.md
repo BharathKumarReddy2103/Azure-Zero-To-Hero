@@ -102,23 +102,23 @@ Azure Monitoring follows a three-step process:
 
    - **Logs:** Event and diagnostic logs from applications and infrastructure.
 
-    - **Traces:** Distributed tracing of requests across microservices.
+   - **Traces:** Distributed tracing of requests across microservices.
 
 **Step 2: Analyze & Process Data**
 
-Use **Log Analytics** to query logs using Kusto Query Language (KQL).
+   - Use **Log Analytics** to query logs using Kusto Query Language (KQL).
 
-Use **Azure Monitor Workbooks** to create visual reports.
+   - Use **Azure Monitor Workbooks** to create visual reports.
 
-Use **AI-based insights** in Application Insights for anomaly detection.
+   - Use **AI-based insights** in Application Insights for anomaly detection.
 
 **Step 3: Take Action**
 
-Set up alerts to notify teams about issues.
+   - Set up alerts to notify teams about issues.
 
-Automate responses using Azure Functions or Logic Apps.
+   - Automate responses using Azure Functions or Logic Apps.
 
-Integrate with DevOps tools like Azure DevOps, Grafana, and Prometheus.
+   - Integrate with DevOps tools like Azure DevOps, Grafana, and Prometheus.
 
 ---
 
