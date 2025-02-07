@@ -211,13 +211,13 @@ kubectl apply -f deployment.yaml
 
 **6. How Does This Work?**
 
-The Secrets Store CSI Driver dynamically mounts Azure Key Vault secrets into the Kubernetes pod at runtime.
+   - The Secrets Store CSI Driver dynamically mounts Azure Key Vault secrets into the Kubernetes pod at runtime.
 
-The application retrieves secrets without storing them as Kubernetes Secrets.
+   - The application retrieves secrets without storing them as Kubernetes Secrets.
 
-When the secret in Key Vault updates, it automatically updates inside the pod.
+   - When the secret in Key Vault updates, it automatically updates inside the pod.
 
-This method enhances security by eliminating hardcoded secrets in Kubernetes YAML files.
+   - This method enhances security by eliminating hardcoded secrets in Kubernetes YAML files.
 
 ---
 
