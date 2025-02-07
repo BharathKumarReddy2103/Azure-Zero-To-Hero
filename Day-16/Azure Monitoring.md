@@ -6,7 +6,7 @@ Monitoring in Azure Cloud is the process of collecting, analyzing, and visualizi
 
 **Why is Monitoring Important in Azure?**
 
-**Proactive Issue Detection:** Identify performance bottlenecks before they impact users.
+- **Proactive Issue Detection:** Identify performance bottlenecks before they impact users.
 
 **Security & Compliance:** Detect anomalies and security threats in cloud workloads.
 
