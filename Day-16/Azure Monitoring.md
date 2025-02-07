@@ -146,7 +146,7 @@ az monitor app-insights component create --app myApp --resource-group MyResource
 az monitor log-analytics workspace create --resource-group MyResourceGroup --workspace-name MyLogAnalytics
 ```
 
-Connect VMs to Log Analytics workspace for real-time monitoring.
+   - Connect VMs to Log Analytics workspace for real-time monitoring.
 
 **Step 4: Enable Monitoring for AKS (Kubernetes)**
 
@@ -154,7 +154,7 @@ Connect VMs to Log Analytics workspace for real-time monitoring.
 az aks enable-addons --resource-group MyResourceGroup --name MyAKSCluster --addons monitoring
 ```
 
-This integrates Azure Monitor with Prometheus for container insights.
+   - This integrates Azure Monitor with Prometheus for container insights.
 
 **Step 5: Create an Alert for High CPU Usage**
 
@@ -164,7 +164,7 @@ az monitor metrics alert create --name HighCPUAlert --resource-group MyResourceG
   --condition "avg Percentage CPU > 80" --window-size 5m --evaluation-frequency 1m --action-groups MyActionGroup
 ```
 
-This triggers an alert when CPU usage exceeds 80%.
+   - This triggers an alert when CPU usage exceeds 80%.
 
 **5. Real-World Use Cases of Azure Monitoring**
 
