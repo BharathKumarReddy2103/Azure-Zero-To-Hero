@@ -10,9 +10,9 @@ Monitoring in Azure Cloud is the process of collecting, analyzing, and visualizi
 
    - **Security & Compliance:** Detect anomalies and security threats in cloud workloads.
 
-**Cost Optimization:** Track resource usage and optimize cloud spending.
+   - **Cost Optimization:** Track resource usage and optimize cloud spending.
 
-**Application Performance Monitoring (APM):** Ensure seamless user experience.
+   - **Application Performance Monitoring (APM):** Ensure seamless user experience.
 
 **Automated Alerts & Responses:** Trigger actions based on predefined thresholds.
 
