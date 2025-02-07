@@ -98,9 +98,9 @@ Azure Monitoring follows a three-step process:
 
 **Step 1: Collect Data from Azure Resources**
 
-**Metrics**: Numerical performance data from Azure services (e.g., CPU usage, memory).
+   - **Metrics**: Numerical performance data from Azure services (e.g., CPU usage, memory).
 
-**Logs:** Event and diagnostic logs from applications and infrastructure.
+   - **Logs:** Event and diagnostic logs from applications and infrastructure.
 
 **Traces:** Distributed tracing of requests across microservices.
 
