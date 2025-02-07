@@ -14,7 +14,7 @@ Monitoring in Azure Cloud is the process of collecting, analyzing, and visualizi
 
    - **Application Performance Monitoring (APM):** Ensure seamless user experience.
 
-**Automated Alerts & Responses:** Trigger actions based on predefined thresholds.
+   - **Automated Alerts & Responses:** Trigger actions based on predefined thresholds.
 
 ---
 
