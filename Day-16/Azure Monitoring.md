@@ -138,7 +138,7 @@ Azure Monitoring follows a three-step process:
 az monitor app-insights component create --app myApp --resource-group MyResourceGroup --location eastus
 ```
 
-Configure auto-instrumentation for .NET, Java, Node.js applications.
+   - Configure auto-instrumentation for .NET, Java, Node.js applications.
 
 **Step 3: Enable Log Analytics for Virtual Machines**
 
