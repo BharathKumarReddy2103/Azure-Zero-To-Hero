@@ -102,7 +102,7 @@ Azure Monitoring follows a three-step process:
 
    - **Logs:** Event and diagnostic logs from applications and infrastructure.
 
-**Traces:** Distributed tracing of requests across microservices.
+    - **Traces:** Distributed tracing of requests across microservices.
 
 **Step 2: Analyze & Process Data**
 
