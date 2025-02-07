@@ -32,6 +32,8 @@ Azure Key Vault works by storing secrets, encryption keys, and certificates and 
 
 4️⃣ **Applications retrieve secrets** using **Azure SDK, REST API, or Kubernetes Secrets Store CSI Driver.**
 
+---
+
 **3. How to Do Secret Management with Azure Key Vault?**
 
 **Step 1: Create an Azure Key Vault**
@@ -58,9 +60,11 @@ Configure Managed Identity for your application.
 
 Retrieve secrets using Azure SDK or REST API.
 
+---
+
 **4. Security Best Practices for Azure Key Vault**
 
-🔹 ```bashUse Azure AD for Authentication```bash
+🔹 Use Azure AD for Authentication
 
 Never store keys in **config files**.
 
@@ -87,6 +91,8 @@ Enable Azure Defender for security alerts.
 🔹 **Use Key Rotation & Expiry Policies**
 
 Regularly rotate secrets and set expiration policies.
+
+---
 
 **5. How to Integrate Azure Key Vault with AKS (Azure Kubernetes Service)?**
 
@@ -133,6 +139,8 @@ CLIENT_ID=$(az aks show --resource-group MyResourceGroup --name MyAKSCluster --q
 ```bash
 az keyvault set-policy --name MyKeyVault --spn $CLIENT_ID --secret-permissions get list
 ```
+
+---
 
 **Step 6: Deploy Kubernetes Secret Store Configuration**
 
@@ -222,6 +230,8 @@ This method enhances security by eliminating hardcoded secrets in Kubernetes YAM
 ✅ Seamless Authentication → Uses Azure Managed Identity for access.
 
 ✅ Better Security & Compliance → All secrets are stored centrally in Key Vault, reducing exposure risks.
+
+---
 
 **8. Conclusion**
 
