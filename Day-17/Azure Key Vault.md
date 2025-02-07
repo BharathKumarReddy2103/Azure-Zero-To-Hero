@@ -66,31 +66,31 @@ az keyvault secret show --vault-name MyKeyVault --name "DBPassword"
 
 🔹 Use Azure AD for Authentication
 
- - Never store keys in **config files**.
+- Never store keys in **config files**.
 
-Use Managed Identity instead of embedding secrets in code.
+- Use Managed Identity instead of embedding secrets in code.
 
 🔹 **Restrict Access with RBAC & Policies**
 
-Assign least privilege access using Azure Role-Based Access Control (RBAC).
+- Assign least privilege access using Azure Role-Based Access Control (RBAC).
 
-Use Access Policies to control who can read/write secrets.
+- Use Access Policies to control who can read/write secrets.
 
 🔹 Enable Soft Delete & Purge Protection
 
-Prevent accidental deletion of secrets using soft delete.
+- Prevent accidental deletion of secrets using soft delete.
 
-Enable Purge Protection to avoid permanent data loss.
+- Enable Purge Protection to avoid permanent data loss.
 
 🔹 **Enable Logging & Monitoring**
 
-Monitor Key Vault access logs with Azure Monitor & Log Analytics.
+- Monitor Key Vault access logs with Azure Monitor & Log Analytics.
 
-Enable Azure Defender for security alerts.
+- Enable Azure Defender for security alerts.
 
 🔹 **Use Key Rotation & Expiry Policies**
 
-Regularly rotate secrets and set expiration policies.
+- Regularly rotate secrets and set expiration policies.
 
 ---
 
