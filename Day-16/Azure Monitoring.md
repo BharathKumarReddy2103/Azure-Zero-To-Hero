@@ -204,10 +204,15 @@ Get recommendations on rightsizing Azure VMs for cost efficiency.
 **6. Best Practices for Azure Monitoring**
 
 ✅ **Enable Azure Monitor for all critical resources** (VMs, AKS, Functions, Storage).
+
 ✅ **Use Log Analytics to centralize logs** from different services.
+
 ✅ **Set up alerts for proactive issue resolution.**
+
 ✅ **Integrate Azure Monitor with Grafana for better dashboards.**
+
 ✅ **Use AI-based insights in Application Insights** for anomaly detection.
+
 ✅ **Monitor cost trends using Azure Cost Management.**
 
 ---
