@@ -22,73 +22,73 @@ Monitoring in Azure Cloud is the process of collecting, analyzing, and visualizi
 
 **1. Azure Monitor**
 
-**Centralized monitoring service** that collects, analyzes, and acts on telemetry from Azure and hybrid resources.
+   - **Centralized monitoring service** that collects, analyzes, and acts on telemetry from Azure and hybrid resources.
 
-Supports **metrics, logs, alerts, and visualizations** for better insights.
+   - Supports **metrics, logs, alerts, and visualizations** for better insights.
 
-Integrates with **Application Insights, Log Analytics, and Azure Sentinel.**
+   - Integrates with **Application Insights, Log Analytics, and Azure Sentinel.**
 
 **2. Azure Application Insights**
 
-**Application Performance Monitoring (APM) tool** for tracking application health.
+   - **Application Performance Monitoring (APM) tool** for tracking application health.
 
-Monitors **request rates, response times, failures, dependencies, and exceptions.**
+   - Monitors **request rates, response times, failures, dependencies, and exceptions.**
 
-Supports **distributed tracing** for microservices-based architectures.
+   - Supports **distributed tracing** for microservices-based architectures.
 
 **3. Azure Log Analytics**
 
-A **log management and query service** for collecting and analyzing log data.
+   - A **log management and query service** for collecting and analyzing log data.
 
-Uses Kusto Query Language (KQL) to generate insights.
+   - Uses Kusto Query Language (KQL) to generate insights.
 
-Collects data from **Azure VMs, Kubernetes (AKS), and cloud applications.**
+   - Collects data from **Azure VMs, Kubernetes (AKS), and cloud applications.**
 
 **4. Azure Sentinel**
 
-**Cloud-native SIEM (Security Information and Event Management)** tool for threat detection and response.
+   - **Cloud-native SIEM (Security Information and Event Management)** tool for threat detection and response.
 
-Provides **AI-powered security analytics** and integration with **Microsoft Defender.**
+   - Provides **AI-powered security analytics** and integration with **Microsoft Defender.**
 
-Helps detect **cyber threats, suspicious activities, and security breaches.**
+   - Helps detect **cyber threats, suspicious activities, and security breaches.**
 
 **5. Azure Metrics**
 
-Real-time performance monitoring using numerical values collected from Azure resources.
+   - Real-time performance monitoring using numerical values collected from Azure resources.
 
-Metrics include CPU utilization, memory usage, disk IOPS, network latency, and HTTP response times.
+   - Metrics include CPU utilization, memory usage, disk IOPS, network latency, and HTTP response times.
 
-Supports custom metrics for applications.
+   - Supports custom metrics for applications.
 
 **6. Azure Alerts**
 
-Automated alerts based on specific conditions (e.g., high CPU usage, service downtime).
+   - Automated alerts based on specific conditions (e.g., high CPU usage, service downtime).
 
-Can trigger email notifications, Azure Functions, Logic Apps, or external integrations like Slack & Teams.
+   - Can trigger email notifications, Azure Functions, Logic Apps, or external integrations like Slack & Teams.
 
-Supports metric-based, log-based, and activity log alerts.
+   - Supports metric-based, log-based, and activity log alerts.
 
 **7. Azure Monitor for Containers (AKS Monitoring)**
 
-Provides container-level monitoring for Azure Kubernetes Service (AKS).
+   - Provides container-level monitoring for Azure Kubernetes Service (AKS).
 
-Tracks CPU/memory usage, pod health, cluster performance, and container logs.
+   - Tracks CPU/memory usage, pod health, cluster performance, and container logs.
 
-Integrates with Prometheus and Grafana for advanced monitoring.
+   - Integrates with Prometheus and Grafana for advanced monitoring.
 
 **8. Azure Monitor for VMs**
 
-Monitors Azure Virtual Machines (VMs) and on-premises servers.
+   - Monitors Azure Virtual Machines (VMs) and on-premises servers.
 
-Collects CPU, disk, memory, and network usage metrics.
+   - Collects CPU, disk, memory, and network usage metrics.
 
-Detects performance degradation and resource contention issues.
+   - Detects performance degradation and resource contention issues.
 
 **9. Azure Cost Management + Billing**
 
-Tracks cloud spending and usage trends to optimize costs.
+   - Tracks cloud spending and usage trends to optimize costs.
 
-Identifies underutilized resources and provides recommendations for cost savings.
+   - Identifies underutilized resources and provides recommendations for cost savings.
 
 ---
 
