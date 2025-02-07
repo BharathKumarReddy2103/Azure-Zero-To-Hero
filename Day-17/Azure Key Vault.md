@@ -66,7 +66,7 @@ az keyvault secret show --vault-name MyKeyVault --name "DBPassword"
 
 🔹 Use Azure AD for Authentication
 
-- Never store keys in **config files**.
+ - Never store keys in **config files**.
 
 Use Managed Identity instead of embedding secrets in code.
 
