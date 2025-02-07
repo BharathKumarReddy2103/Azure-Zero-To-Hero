@@ -56,9 +56,9 @@ az keyvault secret show --vault-name MyKeyVault --name "DBPassword"
 
 **Step 4: Use Key Vault with an Azure Application**
 
-Configure Managed Identity for your application.
+   - Configure Managed Identity for your application.
 
-Retrieve secrets using Azure SDK or REST API.
+   - Retrieve secrets using Azure SDK or REST API.
 
 ---
 
