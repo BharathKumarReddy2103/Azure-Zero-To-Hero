@@ -16,9 +16,7 @@ Azure Key Vault is a cloud-based secrets management service that helps securely 
 
 ✅ **Integration with Azure Services** → Works with Azure Kubernetes Service (AKS), Azure Functions, Virtual Machines, and Azure DevOps.
 
-
 ---
-
 
 **2. How Azure Key Vault Works?**
 
