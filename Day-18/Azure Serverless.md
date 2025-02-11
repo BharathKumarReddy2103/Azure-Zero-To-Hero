@@ -6,15 +6,15 @@ Serverless computing in Azure is a cloud-native execution model where the cloud 
 
 **Key Characteristics of Serverless Computing:**
 
-✅ No Server Management → No need to manage VMs, scaling, or provisioning.
+✅ **No Server Management** → No need to manage VMs, scaling, or provisioning.
 
-✅ Auto-Scaling → Automatically scales based on demand (event-driven execution).
+✅ **Auto-Scaling** → Automatically scales based on demand (event-driven execution).
 
-✅ Pay-as-You-Go → Billed only for actual execution time, reducing costs.
+✅ **Pay-as-You-Go** → Billed only for actual execution time, reducing costs.
 
-✅ Event-Driven Architecture → Functions execute in response to triggers (HTTP requests, events, queues, etc.).
+✅ **Event-Driven Architecture** → Functions execute in response to triggers (HTTP requests, events, queues, etc.).
 
-✅ Built-in High Availability → No need to configure load balancing or failover.
+✅ **Built-in High Availability** → No need to configure load balancing or failover.
 
 ---
 
