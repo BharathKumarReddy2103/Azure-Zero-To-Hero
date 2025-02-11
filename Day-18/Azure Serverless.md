@@ -52,6 +52,8 @@ Azure provides various serverless services across compute, integration, database
 
 🔟 **Azure Key Vault** → Securely manage secrets, keys, and certificates.
 
+---
+
 🔹 **Azure Functions (FaaS - Function as a Service)**
 
 Azure Functions enable developers to run small code snippets on-demand in response to events without managing infrastructure.
