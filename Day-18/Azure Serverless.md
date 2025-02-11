@@ -24,33 +24,33 @@ Azure provides various serverless services across compute, integration, database
 
 🔹 **Serverless Compute Services**
 
-1️⃣ Azure Functions → Execute event-driven code without managing servers.
+1️⃣ **Azure Functions** → Execute event-driven code without managing servers.
 
-2️⃣ Azure Logic Apps → Automate workflows and integrations without writing code.
+2️⃣ **Azure Logic Apps** → Automate workflows and integrations without writing code.
 
-3️⃣ Azure Container Apps → Run containerized applications in a serverless model.
+3️⃣ **Azure Container Apps** → Run containerized applications in a serverless model.
 
 🔹 **Serverless Integration & Event Processing**
 
-4️⃣ Azure Event Grid → Event-based routing for serverless applications.
+4️⃣ **Azure Event Grid** → Event-based routing for serverless applications.
 
-5️⃣ Azure Service Bus → Reliable messaging service for serverless applications.
+5️⃣ **Azure Service Bus** → Reliable messaging service for serverless applications.
 
-6️⃣ Azure Event Hubs → Stream real-time event data from IoT, apps, and logs.
+6️⃣ **Azure Event Hubs** → Stream real-time event data from IoT, apps, and logs.
 
 🔹 **Serverless Databases & Storage**
 
-7️⃣ Azure Cosmos DB (Serverless Mode) → NoSQL database with on-demand scaling.
+7️⃣ **Azure Cosmos DB (Serverless Mode)** → NoSQL database with on-demand scaling.
 
-8️⃣ Azure SQL Database Serverless → Auto-pausing and scaling relational database.
+8️⃣ **Azure SQL Database Serverless** → Auto-pausing and scaling relational database.
 
-9️⃣ Azure Blob Storage (Event-Driven) → Serverless storage with event triggers.
+9️⃣ **Azure Blob Storage (Event-Driven)** → Serverless storage with event triggers.
 
 🔹 **Serverless Monitoring & Security**
 
-🔟 Azure Monitor & Application Insights → Track performance and errors in serverless apps.
+🔟 **Azure Monitor & Application Insights** → Track performance and errors in serverless apps.
 
-🔟 Azure Key Vault → Securely manage secrets, keys, and certificates.
+🔟 **Azure Key Vault** → Securely manage secrets, keys, and certificates.
 
 🔹 **Azure Functions (FaaS - Function as a Service)**
 
