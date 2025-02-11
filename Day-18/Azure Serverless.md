@@ -169,6 +169,8 @@ az eventgrid event-subscription create \
 
 This triggers an Azure Function whenever a new file is uploaded to Blob Storage.
 
+---
+
 **5. Serverless Database & Storage Services**
 
 🔹 **Azure Cosmos DB (Serverless Mode)**
