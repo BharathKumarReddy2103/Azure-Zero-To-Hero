@@ -199,7 +199,7 @@ This **generates an execution plan** and shows which resources will be created.
 terraform apply -auto-approve
 ```
 
-This command deploys the infrastructure on Azure.
+This command **deploys the infrastructure** on Azure.
 
 ---
 
@@ -209,7 +209,7 @@ This command deploys the infrastructure on Azure.
 terraform destroy -auto-approve
 ```
 
-This removes all resources created by Terraform.
+This **removes all resources** created by Terraform.
 
 ---
 
