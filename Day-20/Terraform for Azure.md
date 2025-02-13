@@ -18,7 +18,7 @@ Terraform allows **DevOps engineers** to define infrastructure in a **declarativ
 
 ✅ **Drift Detection** → Detects changes in **Azure resources** and synchronizes them with the desired state.
 
-✅ **Parallel Execution** → Deploys resources efficiently using a dependency graph.
+✅ **Parallel Execution** → Deploys resources efficiently using a **dependency graph.**
 
 ---
 
