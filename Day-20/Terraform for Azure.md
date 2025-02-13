@@ -85,7 +85,7 @@ export ARM_SUBSCRIPTION_ID="<Subscription-ID>"
 export ARM_TENANT_ID="<Tenant-ID>"
 ```
 
-Alternatively, store credentials securely in Azure Key Vault and fetch them dynamically.
+Alternatively, **store credentials securely in Azure Key Vault** and fetch them dynamically.
 
 ---
 
