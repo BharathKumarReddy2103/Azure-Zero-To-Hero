@@ -179,7 +179,7 @@ This downloads the necessary **Azure provider plugins.**
 terraform validate
 ```
 
-Ensures the configuration has no syntax errors.
+Ensures the configuration has **no syntax errors.**
 
 ---
 
@@ -189,7 +189,7 @@ Ensures the configuration has no syntax errors.
 terraform plan
 ```
 
-This generates an execution plan and shows which resources will be created.
+This **generates an execution plan** and shows which resources will be created.
 
 ---
 
