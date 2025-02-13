@@ -169,7 +169,7 @@ resource "azurerm_linux_virtual_machine" "my_vm" {
 terraform init
 ```
 
-This downloads the necessary Azure provider plugins.
+This downloads the necessary **Azure provider plugins.**
 
 ---
 
