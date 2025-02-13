@@ -56,7 +56,7 @@ az account set --subscription "<your-subscription-id>"
 
 **Step 2: Create a Service Principal for Terraform Authentication**
 
-Terraform requires a Service Principal to authenticate with Azure.
+Terraform **requires a Service Principal** to authenticate with Azure.
 
 ```bash
 az ad sp create-for-rbac --name "terraform-sp" --role="Contributor" --scopes="/subscriptions/<your-subscription-id>"
