@@ -262,6 +262,8 @@ terraform init -migrate-state
 
    - Now, Terraform stores the state in Azure Storage instead of local files.
 
+---
+
 **5. Best Practices for Terraform in Azure Cloud**
 
 ✅ **Use Remote State with State Locking**
