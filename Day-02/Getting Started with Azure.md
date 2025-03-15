@@ -25,6 +25,7 @@ By the end of this article, you will have a solid understanding of how Azure's i
 **Step 1: Access the Azure Free Account Page**
 
 To create an account:
+
 **1.**	Search for **Microsoft Azure Free Account** on Google.
 
 **2.**	Click on the first link that appears.
