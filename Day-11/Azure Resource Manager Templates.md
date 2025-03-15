@@ -251,7 +251,7 @@ az deployment group create --resource-group arm-demo-rg --template-file storage-
 
 **Conclusion**
 
-Azure Resource Manager (ARM) templates provide a **powerful, standardized**, and **automated** approach to infrastructure deployment in Azure. While newer tools like **Bicep** are gaining traction, ARM templates remain relevant in enterprise environments.
+**Azure Resource Manager (ARM) templates** provide a **powerful, standardized**, and **automated** approach to infrastructure deployment in Azure. While newer tools like **Bicep** are gaining traction, ARM templates remain relevant in enterprise environments.
 
 If you are a **DevOps Engineer** working with Azure, mastering **ARM templates and Terraform** will boost your **career opportunities** and help you automate infrastructure efficiently.
 
