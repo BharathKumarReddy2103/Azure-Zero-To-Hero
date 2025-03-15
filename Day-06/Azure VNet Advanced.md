@@ -4,7 +4,7 @@
 
 Networking is a fundamental component of any cloud platform, and **Azure Virtual Network (VNet)** plays a crucial role in providing a secure and isolated networking environment. However, understanding networking concepts can be overwhelming for beginners.
 
-In this guide, we will **demystify Azure networking** using a real-world analogy—a secure housing society. By the end of this article, you'll have a **strong conceptual understanding** of Azure networking, including **VNets, subnets, firewalls, Network Security Groups (NSGs), route tables, load balancers, and more.**
+In this guide, we will **demystify Azure networking** using a real-world analogy - a secure housing society. By the end of this article, you'll have a **strong conceptual understanding** of Azure networking, including **VNets, subnets, firewalls, Network Security Groups (NSGs), route tables, load balancers, and more.**
 
 ---
 
