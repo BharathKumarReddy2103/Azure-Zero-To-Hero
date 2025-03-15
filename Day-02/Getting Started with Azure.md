@@ -122,7 +122,7 @@ By deploying applications across multiple **Availability Zones**, organizations 
 
 Imagine a startup in **France, Germany, and Italy** deploying its application in an **India-based Azure region**. If all requests must travel to India, users experience **high latency**. Instead, deploying the application in a **Europe-based Azure region** improves **performance.**
 
---
+---
 
 **3. Cloud Service Models: IaaS vs. PaaS vs. SaaS**
 
