@@ -1,253 +1,231 @@
-**Virtualization:**
+**Azure Virtual Machines:**
 
-**Virtualization** is the process of creating a virtual version of a physical resource, such as servers, storage devices, or networks, using software. It allows multiple virtual resources to operate independently on a single physical system.
+**Introduction**
 
-**Components of Virtualization**
+In this article, we will cover **Azure Virtual Machines (VMs)** in detail, including virtualization concepts, VM creation, deployment of a DevOps application, and **Virtual Machine Scale Sets (VMSS)** for **auto-scaling.** This guide is part of the **Azure Zero to Hero series** and is structured for **DevOps Engineers, Cloud Engineers, and Architects** who want to understand Azure VM fundamentals.
 
-1. **Hypervisor:**
+By the end of this guide, you will learn:
 
-   The key component that enables virtualization.
+**•	Virtualization** concepts and how they work in cloud computing.
 
-   It abstracts physical hardware and allows multiple virtual machines (VMs) to run on a single host.
+•	How to **create and configure a virtual machine** on Azure.
 
-**Types of hypervisors:**
+•	How to **deploy a DevOps application (Jenkins)** on an Azure VM.
 
- Type 1 (Bare-metal): Runs directly on hardware (e.g., VMware ESXi, Microsoft Hyper-V).
+**•	Networking and Security Groups** for VM access.
 
- Type 2 (Hosted): Runs on a host operating system (e.g., Oracle VirtualBox).
+**•	Auto-scaling virtual machines** using **Virtual Machine Scale Sets (VMSS).**
 
-2. **Virtual Machines (VMs):**
+---
 
-   Virtualized instances that mimic physical computers.
+**1. Understanding Virtualization in Cloud Computing**
 
-   Each VM has its own OS, applications, and resources.
+**What is Virtualization?**
 
-3. **Guest OS:**
+Before cloud computing, **physical servers** were the standard for hosting applications. Each organization would purchase **physical servers**, and **system administrators** would manage them. However, this approach led to **resource underutilization** and **high operational costs.**
 
-   The operating system running inside a VM.
+To solve this problem, **virtualization** was introduced. Virtualization allows a single **physical server** to be **logically divided** into multiple **virtual machines (VMs)** using a **hypervisor.**
 
-4. **Virtual Network:**
+**How Virtualization Works in Azure**
 
-   Virtualization of network components like routers and switches for communication between VMs.
+**•	Azure purchases** large numbers of **physical servers** from vendors (e.g., IBM, Dell).
 
-5. **Storage Virtualization:**
+•	Inside Azure **data centers** (e.g., **East US Zone 1**), multiple **physical servers** are deployed.
 
-   Abstracting physical storage into virtual storage pools accessible by VMs.
+•	A **hypervisor** is installed on each **physical server** to create **multiple VMs.**
 
-**Key Concepts of Virtualization**
+•	When a user requests a VM, Azure dynamically assigns **CPU, RAM, and storage** from an available hypervisor.
 
-1. **Resource Abstraction:**
+**Example:**
 
-   Resources like CPU, memory, and storage are abstracted and allocated to VMs.
+If a DevOps Engineer requests a **1 CPU, 2 GB RAM VM in East US**, Azure’s **Resource Manager** checks availability and assigns the required resources from a physical server.
 
-2. **Isolation:**
+---
 
-   VMs operate independently, ensuring that the failure or security issues of one VM do not impact others.
+**2. Creating a Virtual Machine on Azure**
 
-3. **Encapsulation:**
+To create a virtual machine on Azure, follow these steps:
 
-   VMs are encapsulated into files, making them portable and easy to back up or restore.
+**Step 1: Navigate to Virtual Machines**
 
-4. **Live Migration:**
+**1.**	Log in to **Azure Portal.**
 
-    VMs can be moved between hosts without downtime.
+**2.**	Search for **Virtual Machines** in the search bar.
 
-**Benefits of Virtualization**
+**3.**	Click **Create** → **Virtual Machine.**
 
-1. **Cost Efficiency:**
+**Step 2: Configure VM Settings**
 
-   Reduces hardware costs by running multiple VMs on a single physical server.
+| **Parameter**         | **Description** |
+|----------------------|----------------|
+| **Subscription**     | Select **Free Trial** or your existing subscription. |
+| **Resource Group**   | Create a new or select an existing **resource group**. |
+| **Virtual Machine Name** | Provide a meaningful name, e.g., `devops-vm`. |
+| **Region**          | Choose a region **close to your users** (e.g., `East US`). |
+| **Availability Zone** | Select `Zone 1`, `Zone 2`, or `Zone 3` (for HA). |
+| **Image**           | Choose **Ubuntu Server 22.04 LTS** (recommended). |
+| **Size**            | Choose **B1s (Free Tier Eligible)** for demos. |
+| **Authentication**  | Use **SSH key** (recommended). |
 
-2. **Scalability:**
+**Step 3: Review and Deploy**
 
-   Easily add or remove virtual resources as needed.
+**1.**	Click **Review + Create.**
 
-3. **Flexibility and Agility:**
+**2.**	Download the **private key** for SSH access.
 
-   Quickly deploy VMs and adapt to changing workloads.
+**3.**	Click **Create** and wait for the VM to be provisioned.
 
-4. **High Availability:**
+---
 
-   Minimize downtime with features like failover and load balancing.
+**3. Connecting to an Azure Virtual Machine**
 
-5. **Better Resource Utilization:**
+Once the VM is created, you can connect to it using SSH.
 
-   Optimizes hardware utilization by sharing resources among VMs.
+**1.	Copy the Public IP Address** from the Azure Portal.
 
-6. **Simplified Management:**
+**2.**	Open **Git Bash** (Windows) or **iTerm** (Mac/Linux).
 
-   Centralized management tools streamline resource provisioning and monitoring.
+**3.**	Navigate to the directory where the private key is stored.
 
-**Azure Virtual Machine (VM)**
+```sh
+ssh -i ~/Downloads/mykey.pem azureuser@<public-ip>
+```
 
-  Azure Virtual Machines provide IaaS (Infrastructure as a Service), allowing you to run virtualized instances of Windows 
-  or Linux in the Azure Cloud.
+1.	If you get a **permissions error**, run:
 
-**Types of Azure Virtual Machines**
+```sh
+chmod 600 ~/Downloads/mykey.pem
+```
+1.	Once connected, you should see:
 
-1. **General-Purpose VMs:**
+```sh
+azureuser@devops-vm:~$
+```
 
-   Balanced CPU-to-memory ratio.
+---
 
-   Suitable for testing, development, and small to medium applications.
+**4. Deploying Jenkins on the Virtual Machine**
 
-   Example: D-series, B-series.
+**Step 1: Update the System**
 
-2. **Compute-Optimized VMs:**
+```sh
+sudo apt update && sudo apt upgrade -y
+```
 
-   High CPU-to-memory ratio.
+**Step 2: Install Java (Required for Jenkins)**
 
-   Best for batch processing, web servers, and analytics.
+```sh
+sudo apt install openjdk-11-jdk -y
+```
 
-   Example: F-series.
+**Step 3: Install Jenkins**
 
-3. **Memory-Optimized VMs:**
+```sh
+wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+sudo apt update
+sudo apt install jenkins -y
+```
 
-   High memory-to-CPU ratio.
+**Step 4: Start and Enable Jenkins**
 
-   Ideal for large databases and in-memory analytics.
+```sh
+sudo systemctl start jenkins
+sudo systemctl enable jenkins
+```
 
-   Example: E-series, M-series.
+**Step 5: Check Jenkins Status**
 
-4. **Storage-Optimized VMs:**
+```sh
+sudo systemctl status jenkins
+```
 
-   High disk throughput and IOPS.
+**Step 6: Open Jenkins in Browser**
 
-   Suitable for big data and NoSQL databases.
+**1.**	Copy the **public IP address** of your VM.
 
-   Example: L-series.
+**2.**	Open the browser and go to:
 
-5. **GPU-Optimized VMs:**
+```sh
+http://<public-ip>:8080
+```
 
-   High-performance GPUs for AI, ML, and rendering.
+**Note:** If the page does not load, **open port 8080** in Azure’s **Network Security Group (NSG).**
 
-   Example: NV-series, NC-series.
+```sh
+az network nsg rule create --resource-group demo --nsg-name myNSG --name AllowJenkins --protocol tcp --direction inbound --priority 100 --source-address-prefixes '*' --source-port-ranges '*' --destination-port-ranges 8080 --access allow
+```
 
-6. **High-Performance VMs:**
+---
 
-   Designed for high-performance computing (HPC) workloads.
+**5. Understanding Virtual Machine Scale Sets (VMSS)**
 
-   Example: H-series.
+**What is VMSS?**
 
-**How to Create an Azure Virtual Machine**
+Virtual Machine Scale Sets (VMSS) allow **automatic scaling** of VMs based on **traffic load**. This is useful for **handling sudden spikes in user requests.**
 
-1. **Via Azure Portal:**
+**Example:**
 
-   Go to the Azure Portal (https://portal.azure.com).
+•	Your Jenkins server usually gets **1,000 requests per day.**
 
-   Click Create a resource → Compute → Virtual Machine.
+•	During a software release, it spikes to **50,000 requests.**
 
-   Configure details like:
+•	With VMSS, Azure **automatically scales** the number of VMs **based on demand.**
 
-   Subscription: Select your Azure subscription.
+**Key Benefits of VMSS**
 
-   Resource Group: Choose or create one.
+✅ **Auto-scaling:** Automatically increases or decreases VM count.
 
-   VM Name: Enter a name.
+✅ **Load Balancing:** Evenly distributes traffic across VMs.
 
-   Region: Select a region.
+✅ **Cost Optimization:** Only scales **when needed,** reducing cost.
 
-   Image: Choose the OS (Windows/Linux).
+✅ **Fault Tolerance:** Ensures high availability by distributing VMs across zones.
 
-   Size: Select VM size.
+**Creating a VMSS**
 
-   Authentication: Use SSH key or password.
-
-   Click Review + Create and then Create.
-
-2. **Via Azure CLI:**
-
-   az vm create \
-      --resource-group MyResourceGroup \
-      --name MyVM \
-      --image UbuntuLTS \
-      --admin-username azureuser \
-      --generate-ssh-keys
-
-**How to Connect to Azure VM**
-
-1. **Windows VM:**
-
-    Download the RDP file from the Azure Portal.
-
-    Open the RDP file and connect using the username and password.
-
-2. **Linux VM:**
-
-   Use SSH to connect:
-
-   ssh azureuser@<VM_Public_IP>
-
-**How to Deploy Jenkins on Azure VM**
-
-1. **Create a VM:**
-
-   Follow the steps to create a Linux VM (preferably Ubuntu).
-
-2. **Install Jenkins:**
-
-   Connect to the VM via SSH:
-
-   ssh azureuser@<VM_Public_IP>
-
-   pdate the package list:
-
-   sudo apt update
-
-   Install Java:
-
-   sudo apt install openjdk-11-jdk -y
-
-   Add the Jenkins repository and install Jenkins:
-
-    curl -fsSL https://pkg.jenkins.io/debian/jenkins.io.key | sudo tee \
-    /usr/share/keyrings/jenkins-keyring.asc > /dev/null
-
-   echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
-    https://pkg.jenkins.io/debian binary/ | sudo tee \
-    /etc/apt/sources.list.d/jenkins.list > /dev/null
-
-   sudo apt update
-   sudo apt install jenkins -y
-
-   Start Jenkins:
-
-   sudo systemctl start jenkins
-   sudo systemctl enable jenkins
-
-Access Jenkins in the browser:
-
-Open http://<VM_Public_IP>:8080.
-
-Follow the setup wizard.
-
-**VM Scale Sets (for Auto-Scaling)**
-
-  VM Scale Sets allow you to deploy and manage a set of identical VMs for automatic scaling.
-
-**Features:**
-
-  Automatic scaling based on demand or schedules.
-
-  Load balancing to distribute traffic evenly.
-
-  Integration with Azure Monitor for performance tracking.
-
-**How to Create VM Scale Sets:**
-
-1. **Via Azure Portal:**
-
-   Search for "Virtual Machine Scale Sets" → Create.
-
-   Configure parameters like instance size, autoscaling rules, and load balancer settings.
-
-   Deploy the scale set.
-
-2. **Via Azure CLI:**
-
+```sh
 az vmss create \
-    --resource-group MyResourceGroup \
-    --name MyScaleSet \
-    --image UbuntuLTS \
-    --admin-username azureuser \
-    --generate-ssh-keys
+  --resource-group demo \
+  --name myScaleSet \
+  --image UbuntuLTS \
+  --admin-username azureuser \
+  --generate-ssh-keys \
+  --instance-count 2 \
+  --vm-sku Standard_DS1_v2 \
+  --upgrade-policy-mode automatic
+```
+
+**Verify Scaling Policy**
+
+```sh
+az monitor autoscale show --resource-group demo --name myScaleSet
+```
+
+---
+
+**Conclusion**
+
+In this guide, we covered:
+
+**•	Virtualization concepts** in Azure.
+
+•	How to **create, configure, and connect** to an Azure VM.
+
+•	Deploying a **DevOps application (Jenkins)** on a VM.
+
+**•	Networking & security** for VM access.
+
+**•	Virtual Machine Scale Sets (VMSS)** for auto-scaling.
+
+This knowledge is essential for **DevOps Engineers and Cloud Architects** to efficiently manage infrastructure in Azure.
+
+🚀 **Next Steps:**
+
+**•	Explore Azure Load Balancers** to distribute traffic across VMs.
+
+**•	Implement Infrastructure as Code (IaC)** using **Terraform** or **Bicep.**
+
+**•	Integrate CI/CD pipelines** with Azure DevOps & Kubernetes.
+
+📌 **Follow this repository for more Azure Zero to Hero content** ⭐
