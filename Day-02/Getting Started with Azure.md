@@ -2,7 +2,7 @@
 
 **Introduction**
 
-Microsoft Azure is one of the leading cloud platforms providing a range of services for businesses, developers, and DevOps engineers. As part of the Azure zero to Hero series, this article covers essential topics for beginners and professionals who want to get started with Azure.
+**Microsoft Azure** is one of the leading cloud platforms providing a range of services for businesses, developers, and DevOps engineers. As part of the Azure zero to Hero series, this article covers essential topics for beginners and professionals who want to get started with Azure.
 
 This guide includes:
 
