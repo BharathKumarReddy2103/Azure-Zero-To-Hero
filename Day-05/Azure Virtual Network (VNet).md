@@ -148,4 +148,4 @@ By implementing **these best practices**, organizations can build a **secure, sc
 - Implement a **real-world Azure networking project**.  
 - Read **Microsoft Azure documentation** on **VNets, NSGs, and ASGs**.  
 
-  *Found this guide helpful? Star this repository on GitHub and contribute to open-source cloud networking projects!*  
+  *Found this guide helpful? Star this repository on GitHub and contribute to open-source cloud networking projects*  
