@@ -1,4 +1,4 @@
-**Introduction to Cloud Computing: Public, Private, and Hybrid Cloud Explained**
+**Introduction to Cloud Computing:**
 
 Cloud computing is the backbone of modern IT infrastructure, enabling businesses to deploy, scale, and manage applications efficiently. Before diving into specific cloud platforms like AWS, Azure, or Google Cloud, understanding the core concepts of cloud computing is essential.
 
