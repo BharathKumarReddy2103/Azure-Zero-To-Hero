@@ -240,6 +240,6 @@ For further learning, explore:
 **Contribute to This Repository**
 
 If you found this guide helpful, consider **starring this repository** on GitHub.
-We encourage **open-source contributions**—feel free to submit **pull requests** to improve the documentation.
+We encourage **open-source contributions** - feel free to submit **pull requests** to improve the documentation.
 
 Happy Learning 🚀
