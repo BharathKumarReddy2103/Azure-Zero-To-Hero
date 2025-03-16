@@ -10,7 +10,7 @@ This project will walk through:
 
 **•	Writing Dockerfiles for microservices**
 
-**•	Building CI pipelines in Azure DevOps**
+**•	Building CI pipeline in Azure DevOps**
 
 **•	Configuring Azure DevOps Repositories (Azure Repos)**
 
