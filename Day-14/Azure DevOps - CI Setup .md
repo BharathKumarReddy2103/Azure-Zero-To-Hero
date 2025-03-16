@@ -24,7 +24,7 @@ This project will walk through:
 
 The application is a **voting system** where users vote between two options (e.g., **Cats vs. Dogs**) and view real-time results. It consists of multiple microservices:
 
-Microservices and Their Roles
+**Microservices and Their Roles**
 
 ```sh
 | Microservice    | Language   | Role |
