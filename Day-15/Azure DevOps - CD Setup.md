@@ -122,7 +122,9 @@ kubectl get svc -n argocd
 
 Access ArgoCD in a browser using 
 
+```sh
 http://<Node-IP>:<NodePort>.
+```
 
 **Login to ArgoCD**
 
