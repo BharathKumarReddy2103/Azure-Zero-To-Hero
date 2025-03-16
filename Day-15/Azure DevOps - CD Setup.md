@@ -120,7 +120,9 @@ kubectl get nodes -o wide
 kubectl get svc -n argocd
 ```
 
-Access ArgoCD in a browser using **http://<Node-IP>:<NodePort>.**
+Access ArgoCD in a browser using 
+
+http://<Node-IP>:<NodePort>.
 
 **Login to ArgoCD**
 
