@@ -61,9 +61,10 @@ In DevOps and Cloud environments, **resources** like Virtual Machines (VMs), Blo
 ### **Use Case**  
 A **DevOps Engineer** needs to securely **read a file stored in Azure Blob Storage** from an **Azure Virtual Machine**. Instead of using **hardcoded credentials**, we will use **Managed Identities**.
 
-### **Steps to Implement Managed Identity Access**  
+**Steps to Implement Managed Identity Access**  
 
-### **1. Create an Azure Virtual Machine**
+**1. Create an Azure Virtual Machine**
+
 ```sh
 az vm create \
   --resource-group ManagedIdentityPOC \
@@ -71,21 +72,38 @@ az vm create \
   --image UbuntuLTS \
   --admin-username azureuser \
   --generate-ssh-keys
+```
 
-2. Enable System-Assigned Managed Identity
+**2. Enable System-Assigned Managed Identity**
+
+```sh
 az vm identity assign \
   --resource-group ManagedIdentityPOC \
   --name ManagedDemoVM
-3. Assign Role to the Managed Identity
+```
+
+**3. Assign Role to the Managed Identity**
+
+```sh
 az role assignment create \
   --assignee $(az vm show --resource-group ManagedIdentityPOC --name ManagedDemoVM --query "identity.principalId" --output tsv) \
   --role "Storage Blob Data Reader" \
   --scope /subscriptions/YOUR_SUBSCRIPTION_ID/resourceGroups/ManagedIdentityPOC/providers/Microsoft.Storage/storageAccounts/YOUR_STORAGE_ACCOUNT
+```
+
 Replace YOUR_SUBSCRIPTION_ID and YOUR_STORAGE_ACCOUNT with your actual values.
-4. Access Azure Blob Storage from the Virtual Machine
-4.1 Fetch Managed Identity Access Token
+
+**4. Access Azure Blob Storage from the Virtual Machine**
+
+**4.1 Fetch Managed Identity Access Token**
+
+```sh
 ACCESS_TOKEN=$(curl -s "http://169.254.169.254/metadata/identity/oauth2/token?resource=https://storage.azure.com/&api-version=2019-06-01" -H "Metadata: true" | jq -r '.access_token')
-4.2 Read the Blob Storage File
+```
+
+**4.2 Read the Blob Storage File**
+
+```sh
 STORAGE_ACCOUNT="yourstorageaccount"
 CONTAINER_NAME="testcontainer"
 BLOB_NAME="index.html"
@@ -93,20 +111,36 @@ BLOB_NAME="index.html"
 curl -s -H "x-ms-version: 2019-07-07" \
      -H "Authorization: Bearer $ACCESS_TOKEN" \
      "https://$STORAGE_ACCOUNT.blob.core.windows.net/$CONTAINER_NAME/$BLOB_NAME"
-Outcome
-•	The Virtual Machine securely retrieves the file from Blob Storage without requiring explicit credentials.
-•	The authentication is handled automatically via Managed Identities.
-Best Practices for Azure IAM
-•	Follow the principle of least privilege – Assign only the minimum permissions required.
-•	Use Managed Identities instead of Service Principals to avoid credential management.
-•	Regularly audit IAM roles and permissions to prevent unauthorized access.
-•	Implement Multi-Factor Authentication (MFA) for added security.
-•	Use Groups for Role Assignments instead of assigning roles to individual users for easier management.
-•	Monitor IAM logs and alerts using Azure Security Center and Azure Monitor.
-Conclusion
-Azure Identity and Access Management (IAM) is essential for securing cloud resources while ensuring controlled access. Authentication ensures users are valid, authorization determines their permissions, and Managed Identities allow resources to securely communicate without storing credentials.
-By following best practices and implementing role-based access control (RBAC), Managed Identities, and Microsoft Entra ID, organizations can achieve a secure and scalable IAM strategy in Azure.
-________________________________________
+```
+
+**Outcome**
+
+•	The Virtual Machine **securely retrieves** the file from Blob Storage **without requiring explicit credentials.**
+
+•	The authentication is **handled automatically** via **Managed Identities.**
+
+**Best Practices for Azure IAM**
+
+**•	Follow the principle of least privilege** – Assign only the minimum permissions required.
+
+**•	Use Managed Identities instead of Service Principals** to avoid credential management.
+
+**•	Regularly audit IAM roles and permissions** to prevent unauthorized access.
+
+**•	Implement Multi-Factor Authentication (MFA)** for added security.
+
+**•	Use Groups for Role Assignments** instead of assigning roles to individual users for easier management.
+
+**•	Monitor IAM logs and alerts** using Azure Security Center and Azure Monitor.
+
+**Conclusion**
+
+Azure Identity and Access Management (IAM) is essential for securing cloud resources while ensuring controlled access. **Authentication** ensures users are valid, authorization determines their permissions, and **Managed Identities** allow resources to securely communicate without storing credentials.
+
+By following **best practices** and implementing **role-based access control (RBAC), Managed Identities, and Microsoft Entra ID**, organizations can achieve **a secure and scalable IAM strategy in Azure.**
+
+---
+
 
 💡 Interested in more DevOps and Cloud content?
 
