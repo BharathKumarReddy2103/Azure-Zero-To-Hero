@@ -26,7 +26,7 @@ The application is a **voting system** where users vote between two options (e.g
 
 **Microservices and Their Roles**
 
-```sh
+
 | Microservice       | Language    | Role                                      |
 |--------------------|------------|-------------------------------------------|
 | **Voting Service** | Python      | Accepts user votes                        |
@@ -34,7 +34,7 @@ The application is a **voting system** where users vote between two options (e.g
 | **Results Service** | Node.js     | Displays voting results                   |
 | **Redis**         | In-Memory DB | Temporary storage for votes               |
 | **PostgreSQL**    | Database     | Stores finalized vote counts              |
-```
+
 
 ---
 
