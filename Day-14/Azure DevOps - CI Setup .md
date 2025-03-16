@@ -1,4 +1,4 @@
-**Implementing CI for a Multi-Microservice Application Using Azure DevOps Pipelines**
+**Implementing CI for a Multi-Microservice Application Using Azure DevOps Pipeline**
 
 **Introduction**
 
