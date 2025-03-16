@@ -1,4 +1,4 @@
-# Azure Identity and Access Management (IAM): Authentication, Authorization, and Managed Identities  
+# Azure Identity and Access Management (IAM): # 
 
 ## Introduction  
 In modern cloud environments, **Identity and Access Management (IAM)** plays a critical role in ensuring security, compliance, and controlled access to resources. In **Microsoft Azure**, IAM helps manage user identities, authentication, authorization, and resource access efficiently.  
