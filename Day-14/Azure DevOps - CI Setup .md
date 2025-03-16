@@ -2,7 +2,7 @@
 
 **Introduction**
 
-Continuous Integration (CI) is a crucial part of DevOps practices, ensuring that code changes are continuously built, tested, and integrated into a shared repository. In this guide, we will implement **CI pipelines using Azure DevOps** for a **multi-microservice** application written in **Python, Node.js, and .NET**, with **Redis and PostgreSQL** as data stores.
+Continuous Integration (CI) is a crucial part of DevOps practices, ensuring that code changes are continuously built, tested, and integrated into a shared repository. In this guide, we will implement **CI pipeline using Azure DevOps** for a **multi-microservice** application written in **Python, Node.js, and .NET**, with **Redis and PostgreSQL** as data stores.
 
 This project will walk through:
 
