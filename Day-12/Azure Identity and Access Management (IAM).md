@@ -142,6 +142,6 @@ By following **best practices** and implementing **role-based access control (RB
 ---
 
 
-💡 Interested in more DevOps and Cloud content?
+💡 **Interested in more DevOps and Cloud content?**
 
-👉 Follow my GitHub for more Azure, DevOps, and Cloud projects
+👉 **Follow my GitHub for more Azure, DevOps, and Cloud projects**
