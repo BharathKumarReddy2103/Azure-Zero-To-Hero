@@ -113,7 +113,7 @@ func init myServerlessApp --worker-runtime python
 cd myServerlessApp
 ```
 
-3.	Create a new function triggered by Azure Storage:
+**3.	Create a new function triggered by Azure Storage:**
 
 ```sh
 func new --name EnforceBlobStoragePolicy --template "BlobTrigger" --language python
