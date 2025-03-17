@@ -69,7 +69,7 @@ Before proceeding, ensure you have:
 
 •	An **Azure Subscription** (Free Tier or Pay-as-you-Go)
 
-**•	Azure CLI installed** **Download Here** (https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)
+**•	Azure CLI installed** (**Download Here**) (https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)
 
 •	A **GitHub Repository** to store scripts (optional)
 
