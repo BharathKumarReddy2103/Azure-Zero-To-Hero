@@ -30,7 +30,7 @@ You might wonder, **why use Terraform when Azure provides its own automation too
 
 **•	Bicep**
 
-The answer is **portability and flexibility.** Unlike Azure-specific tools, **Terraform** supports multiple cloud providers (**AWS, GCP, OpenStack, DigitalOcean, etc.**) with **one common language—HashiCorp Configuration Language (HCL).**
+The answer is **portability and flexibility.** Unlike Azure-specific tools, **Terraform** supports multiple cloud providers (**AWS, GCP, OpenStack, DigitalOcean, etc.**) with **one common language - HashiCorp Configuration Language (HCL).**
 
 **Key Benefits of Terraform:**
 
