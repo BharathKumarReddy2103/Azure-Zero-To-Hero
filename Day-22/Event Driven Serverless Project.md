@@ -110,11 +110,11 @@ az functionapp create --resource-group $RESOURCE_GROUP --consumption-plan-locati
 
 **1.	Go to the Azure Portal** and navigate to your Function App.
 
-**2.	Click on **"Create a Function" → "Develop in Portal".**
+**2.**	Click on **"Create a Function" → "Develop in Portal".**
 
-**3.	Choose **"Blob Storage Trigger"** as the event trigger.
+**3.**	Choose **"Blob Storage Trigger"** as the event trigger.
 
-**4.	Set the **path** to monitor Blob Storage uploads:
+**4.**	Set the **path** to monitor Blob Storage uploads:
 
 ```sh
 samples-workitems/{name}
