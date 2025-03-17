@@ -1,4 +1,4 @@
-# Azure-Zero-to-Hero
+# Azure-Zero-To-Hero
 
 ## Overview  
 This repository is designed to help DevOps Engineers learn and master Azure Cloud concepts from scratch. It includes a wide range of topics, tools, and techniques that are essential for implementing Azure solutions in real-world DevOps environments.
